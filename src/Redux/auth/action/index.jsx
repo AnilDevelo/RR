@@ -3,6 +3,7 @@ import {AUTH_CHANGE_PASSWORD, AUTH_FORGOT_PASSWORD, AUTH_LOGIN, AUTH_RESET_PASSW
 let CryptoJS = require("crypto-js");
 
 export const loginUser = (payload) => async (dispatch, getState, api) => {
+    Cookies.set(`token`, "checkuser", { path: "/", expires: 1 / 2 })
     return await api
         .post(AUTH_LOGIN, payload)
         .then((res) => {

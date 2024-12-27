@@ -10,7 +10,6 @@ import FilledButton from "../../../Components/FileButton";
 import SimpleReactValidator from "simple-react-validator";
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import OTP from '../../../Components/OTP'
 import Logo from "../../../assets/images/logo.png";
 import { toast } from 'react-toastify';
 
@@ -64,6 +63,7 @@ const Login = () => {
                     setLoader(false)
                 }
             })
+            navigate('/dashboard');
         } else {
             simpleValidator.current.showMessages();
             forceUpdate();
@@ -132,9 +132,6 @@ const Login = () => {
                         </div>
                         <FilledButton type={'submit'} value={'Log In'} className={'formloginBtn loader_css'} loading={loader} />
                     </form>
-
-                    <OTP separator={<span>-</span>} value={otp} onChange={setOtp} length={5} />
-<span>Entered value: {otp}</span>
                 </Box>
             </Box>
             <CommonModal className={'Approved-reject-section'} modalIsOpen={modalDetails.modalIsOpen} handleOpenModal={handleOpenModal}>

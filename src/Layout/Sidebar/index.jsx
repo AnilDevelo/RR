@@ -291,25 +291,27 @@ function LeftContent() {
                     menusList?.map((menu, i) => {
                         //let agentDataDetails = JSON.parse(localStorage.getItem('agentData')) ||
                         //let agentDataDetails = cookies.get('agentData');
-                        let agentDataDetails =  agentDetails();
-                        let payload = {
-                            permission: {
-                                ...agentDataDetails.permission,
-                                subAdminUser:{
-                                    editor: JSON.parse(localStorage.getItem('userdata'))?.role === 'AdminUser' ,
-                                    viewer: JSON.parse(localStorage.getItem('userdata'))?.role === 'AdminUser'
-                                }
-                            }
-                        }
-                        let AgentCondition = agentDataDetails !== 'null' && (payload && menu.value === (Object?.keys(payload?.permission || {})[Object?.keys(payload?.permission || {})?.indexOf(menu.value)]));
-                        let agentValueViewer = (Object?.keys(payload?.permission || {})?.length > 0 && payload?.permission[(Object?.keys(payload?.permission || {})[Object?.keys(payload?.permission || {})?.indexOf(menu.value)])]?.viewer);
-                        let agentValueEditor = (Object?.keys(payload?.permission || {})?.length > 0 && payload?.permission[(Object?.keys(payload?.permission || {})[Object?.keys(payload?.permission || {})?.indexOf(menu.value)])]?.editor);
-                        let agentValue = (agentValueViewer ||  agentValueEditor)
+                        // let agentDataDetails =  agentDetails();
+                        // let payload = {
+                        //     permission: {
+                        //         ...agentDataDetails.permission,
+                        //         subAdminUser:{
+                        //             editor: JSON.parse(localStorage.getItem('userdata'))?.role === 'AdminUser' ,
+                        //             viewer: JSON.parse(localStorage.getItem('userdata'))?.role === 'AdminUser'
+                        //         }
+                        //     }
+                        // }
+                        // let AgentCondition = agentDataDetails !== 'null' && (payload && menu.value === (Object?.keys(payload?.permission || {})[Object?.keys(payload?.permission || {})?.indexOf(menu.value)]));
+                        // let agentValueViewer = (Object?.keys(payload?.permission || {})?.length > 0 && payload?.permission[(Object?.keys(payload?.permission || {})[Object?.keys(payload?.permission || {})?.indexOf(menu.value)])]?.viewer);
+                        // let agentValueEditor = (Object?.keys(payload?.permission || {})?.length > 0 && payload?.permission[(Object?.keys(payload?.permission || {})[Object?.keys(payload?.permission || {})?.indexOf(menu.value)])]?.editor);
+                        // let agentValue = (agentValueViewer ||  agentValueEditor)
                         return (
                             <React.Fragment key={i}>
                                                                 {/* Check if user has permission to view the menu */}
 
-                                                                {(((userRole) === 'Admin') || (AgentCondition && agentValue)) && (
+                                                                {
+                                                                // (((userRole) === 'Admin') || (AgentCondition && agentValue)) 
+                                                                true && (
                                         <>
                                             <ListItemButton sx={{ padding: "5px 15px" }} selected={menu?.src === window.location.pathname.replace('/', '')} className='list_item fontFamily' onClick={() => menu.hasMoreMenu ? ToggleMenu(menu?.id) : handleClicked(menu?.src)}>
                                                 <ListItemIcon style={{ minWidth: "20px" }} className={'icon-left-side fontFamily'}>
