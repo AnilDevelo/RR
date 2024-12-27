@@ -1,0 +1,787 @@
+.user_details_inner_section {
+  p {
+    font-family: Inter, sans-serif;
+  }
+  .user_details_inner_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      img {
+        border-radius: 100%;
+        height: 50px;
+        object-fit: cover;
+        width: 50px;
+        margin-right: 10px;
+      }
+      h2 {
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+      }
+    }
+  }
+  .user_details_section {
+    @extend .d_flex;
+    @extend .align_items_start;
+    @extend .flex_wrap;
+  }
+  .user_inner_div {
+    @extend .d_flex;
+    @extend .justify_content_between;
+    @extend .flex_wrap;
+    width: 100%;
+    @media screen and (max-width: 1669px) {
+      //flex-wrap: wrap;
+      display: block;
+    }
+  }
+  .let_section,
+  .right_section {
+    width: 33%;
+    @media screen and (max-width: 1669px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 1493px) {
+      width: 100%;
+    }
+  }
+  .user_btn_details {
+    width: 47%;
+    text-align: right;
+    @media screen and (max-width: 1493px) {
+      width: 75%;
+    }
+  }
+  .middle_section {
+    padding-left: 50px;
+    @media screen and (max-width: 1669px) {
+      padding-left: 0px;
+    }
+    @media screen and (max-width: 1493px) {
+      padding-left: 0px;
+    }
+  }
+  .let_section {
+    //border-right: 1px solid #cfd8dc;
+    @extend .d_flex;
+    @media screen and (max-width: 1669px) {
+      border: none;
+    }
+    @media screen and (max-width: 1493px) {
+      border: none;
+    }
+  }
+  .personal_information_content {
+    .form_data {
+      margin-bottom: 10px;
+      @extend .d_flex;
+      @extend .align_items_center;
+      color: black;
+      h6 {
+        font-weight: 500;
+        font-size: 14px;
+        width: 167px;
+      }
+      p {
+        padding-left: 37px;
+        font-size: 14px;
+      }
+    }
+  }
+  .right_section {
+    .personal_information_content {
+      padding-left: 20px;
+      @media screen and (max-width: 1669px) {
+        padding-left: 0px;
+      }
+      @media screen and (max-width: 1493px) {
+        padding-left: 0px;
+      }
+    }
+  }
+  .last_section {
+    button {
+      background-color: #0277bd;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+      color: #f0f5ff;
+      height: 40px;
+      min-height: 40px;
+      max-height: 40px;
+      line-height: 1px;
+      padding: 0 16px;
+      min-width: 64px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .user_field_content_row {
+    @extend .d_flex;
+    @extend .justify_content_between;
+    .user_field_content_flex {
+      display: flex;
+    }
+  }
+  .update_bonus_btn {
+    color: $white;
+    border: none;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #1d1f2b;
+    font-family: Inter, sans-serif;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.user_profile_edit_info {
+  @extend .d_flex;
+  // @extend .justify_content_between;
+  // @extend .align_items_center;
+  .userProfile_edit_info {
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+  }
+  .form_data_btn {
+    width: 51%;
+    @extend .d_flex;
+    @extend .align_items_center;
+    button {
+      width: 100%;
+    }
+  }
+  form{
+    width: 50%;
+  }
+}
+
+.profile {
+  .user_profile {
+    text-align: center;
+    width: 100px;
+    &_pic {
+      @extend .w_100;
+      position: relative;
+      margin-bottom: 10px;
+      //border: 1px solid lightgray;
+      border-radius: 5% !important;
+      img {
+        border-radius: 100%;
+        height: 100px;
+        object-fit: cover;
+        width: 100px;
+      }
+      .profile_label {
+        padding-left: 14px;
+      }
+      .addnew {
+        bottom: 4px;
+        height: 30px;
+        position: absolute;
+        right: -4px;
+        width: 30px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        input[type="file"] {
+          cursor: pointer;
+          font-size: 0;
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          padding-left: 26px;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.user-details {
+  .user_details_form {
+    .form_details_section {
+      @extend .d_flex;
+      @extend .align_items_center;
+      margin-bottom: 15px;
+      label {
+        width: 20%;
+      }
+      .formData {
+        width: 50%;
+        input {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.user_detail_info {
+  padding: 32px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  .info_filed {
+    padding-bottom: 3px;
+    .info_title {
+      font-weight: 600;
+    }
+    span {
+      color: #0c0d13;
+    }
+  }
+}
+
+.update_user_cash {
+  .input_length_counter {
+    span {
+      top: 20px !important;
+    }
+  }
+}
+
+//----------------------------------------- User Note -----------------------------------------------------------------
+
+.avatar-section-data {
+  .avatar_container_details {
+    width: 800px;
+    margin: 0 auto;
+    .avatar-modal {
+      margin-left: 0 !important;
+    }
+    .edit_avatar_btn {
+      display: flex;
+    }
+  }
+  .avatar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      margin-bottom: 5px;
+      color: black;
+    }
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  .upload_avatar_image {
+    margin-top: 5px;
+    position: relative;
+    input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .avatar_uploader {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: block;
+      //background-color: #8E8C8C;
+      position: relative;
+      border: 1px solid #e2e8f0;
+      margin: 5px auto;
+    }
+  }
+  .submit_btn {
+    margin-right: 10px;
+  }
+  button {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+      0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+    height: 46px;
+    margin-top: 5px;
+    background-color: #0277bd;
+    min-width: 64px;
+    padding: 6px 16px;
+    border: 0;
+    color: #fff;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar-modal {
+    width: 100%;
+    margin: 0 40px;
+    @media screen and (max-width: 1700px) {
+      margin: 0 20px;
+    }
+  }
+  .avatar-name-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    input {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      min-height: 48px;
+      border-radius: 6px;
+      padding: 0 16px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      background-color: white;
+      border: 1px solid #cfd8e3;
+    }
+  }
+}
+
+.errorMsg {
+  font-size: 13px !important;
+  text-transform: capitalize;
+  margin: 2px 0;
+  color: #c81e1e !important;
+  font-weight: 500 !important;
+}
+.upload_avatar {
+  text-align: center;
+}
+
+.avatar_box {
+  //display: flex;
+  //justify-content: space-between;
+  .outerbox {
+    //margin-right: 0;
+    .upload_avatar {
+      width: 80px;
+    }
+    .profile {
+      padding-right: 0;
+      .user_profile_pic {
+        width: 80px;
+        margin-top: 6px;
+        img {
+          height: 80px;
+          width: 100%;
+        }
+        .addnew {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .avatar_right_box {
+    margin-right: 40px;
+    width: 30%;
+  }
+  .avtar_btn_details {
+    width: 25%;
+    button {
+      margin-right: 10px;
+      margin-left: 0;
+    }
+    @media screen and (max-width: 1700px) {
+      width: 32%;
+    }
+    @media screen and (max-width: 1617px) {
+      width: 34%;
+    }
+    @media screen and (max-width: 1580px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 1480px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 1439px) {
+      width: 50%;
+    }
+  }
+}
+.search_box_avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.padding_left {
+  padding-right: 5px;
+}
+
+//--------------------------------------- User KYC ---------------------------------
+.add_admin_user_popup {
+  .add_admin_user_popup_content {
+    .user_kyc_section {
+      .documents_fields {
+        margin-top: 10px;
+        .user_kyc_section_filed_document {
+          p {
+            font-size: 13px;
+            font-weight: 100;
+            margin-top: 5px;
+          }
+          .document_details_kyc {
+            display: flex;
+          }
+          .show_document_details {
+            display: flex;
+            img {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .u_align-center {
+            margin-top: 10px;
+            .u_file-attachment {
+              background: #fff;
+              width: 56px;
+              height: 56px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              cursor: pointer;
+              margin-right: 15px;
+              border: 1px dashed #d6d9e5;
+              border-radius: 5px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+              input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+                padding: 0;
+                margin: 0;
+                min-height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.kyc-details-popup {
+  h2 {
+    font-size: 16px;
+  }
+  .old-list-Aadhar-card-details {
+    margin-top: 20px;
+  }
+}
+
+.gst_details_table {
+  h5 {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(55, 61, 63);
+  }
+}
+
+.user_location_ul {
+  list-style: none;
+  li {
+    list-style: none;
+    line-height: 22px;
+  }
+}
+
+.document-details {
+  .add_admin_user_popup_title {
+    padding: 20px 10px 10px;
+  }
+  .document-details-images {
+    padding: 0 20px 20px;
+    max-height: 67vh;
+    overflow: auto;
+    min-height: 100px;
+  }
+  .document_images_section {
+    margin-top: 10px;
+    //border: 1px solid;
+    //padding: 10px;
+    //border-radius: 4px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 660px) {
+  .outer-box {
+    margin: 25px;
+  }
+  .makeStyles-margin-1,
+  .makeStyles-margin-5,
+  .makeStyles-margin-9 {
+    width: 100%;
+  }
+  .filter_export_details_dropDown {
+    width: 100%;
+  }
+  .search-filter-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0 !important;
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .filter_days_details_dropDown {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  // .css-sseanl {
+  //   width: 300px !important;
+  //   padding: 20px;
+  // }
+  //Users Details Page Start
+  .user_profile_edit_info {
+    flex-wrap: wrap !important;
+  }
+  .user_inner_div {
+    padding-bottom: 5rem;
+  }
+  .user_details_inner_profile {
+    display: unset !important;
+  }
+  .user_details_inner_section {
+    position: relative;
+  }
+  .add_winning_cash {
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    margin-left: 0 !important;
+  }
+  .add_deposit_cash {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    margin-left: 0 !important;
+  }
+  .update_bonus_btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 0 !important;
+  }
+  .form_data {
+    p {
+      padding-left: 10px !important;
+    }
+  }
+  //popup start
+  .outer-box {
+    .user_profile_edit_info {
+      .profile {
+        justify-content: center !important;
+        padding-right: 0 !important;
+      }
+    }
+    .w_100 {
+      .user-details {
+        .user_details_form {
+          .form_details_section {
+            display: unset !important;
+            .formData {
+              width: 100%;
+              margin-top: 0 !important;
+            }
+          }
+        }
+        .form_data_btn {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  //popup end
+  //Users Details Page End
+
+  //User KYC Page Popup Start
+  .css-lh8pxb {
+    width: 300px !important;
+  }
+  //User KYC Page Popup End
+
+  //admin users start
+  .css-104ak8c {
+    padding: 15px !important;
+  }
+  .formData_btn {
+    justify-content: start !important;
+    gap: 10px !important;
+  }
+  .admin_list_flex {
+    flex-wrap: wrap !important;
+    .left_side_filed {
+      margin-right: 0 !important;
+    }
+    .right_side_filed {
+      margin-left: 0 !important;
+    }
+  }
+  //admin users end
+}
+@media screen and (min-width: 661px) and (max-width: 900px) {
+  .makeStyles-margin-1,
+  .makeStyles-margin-5,
+  .makeStyles-margin-9 {
+    width: 100%;
+  }
+  .search-filter-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .block-user {
+    max-width: 50% !important;
+  }
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .filter_export_date_dropdown {
+    justify-content: space-between !important;
+  }
+  .filter_days_details_dropDown {
+    width: 30%;
+  }
+  .filter_export_details_dropDown {
+    width: 30%;
+  }
+  .filter_details_tab_section {
+    width: 100%;
+    display: block;
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+    .filter_days_details_dropDown {
+      margin-left: 0 !important;
+    }
+    .block-user {
+      max-width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 980px) {
+  .search-filter-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .filter_export_date_dropdown {
+    flex-wrap: unset !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .filter_export_date_dropdown {
+    justify-content: space-around !important;
+  }
+  .search-filter-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  // .block-user {
+  //   max-width: 50% !important;
+  // }
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .filter_details_tab_section {
+    width: 100%;
+    display: block;
+  }
+  // .css-sseanl,
+  // .css-lh8pxb {
+  //   left: 65% !important;
+  // }
+  .filter_details_tab_section {
+    width: 100%;
+    display: block;
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+    .filter_days_details_dropDown {
+      margin-left: 0 !important;
+    }
+    .block-user {
+      max-width: 100% !important;
+    }
+  }
+}
+
+.kyc-dashed-type {
+  cursor: default !important;
+}
+
+.OverView_pagination{
+  max-height: 75Vh;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 0 32px;
+}
+.view-back-btn {
+  padding: 6px 4px 6px 2px !important;
+  background: white !important;
+  border: 1px solid #0277bd !important;
+  display: flex !important;
+  align-items: center !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  color: #0277bd !important;
+  font-size: 17px !important;
+  font-family: "Inter", sans-serif !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.wallet_history_ul{
+  list-style-type: none;
+}
+
+// .select2-container--default .select2-selection--single .select2-selection__arrow{
+//   height: 19px !important
+// }
+
+.pdf_viewer{
+  margin-top: 0.5rem;
+  iframe{
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    overflow-y: scroll;
+  }
+}

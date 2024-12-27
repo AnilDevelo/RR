@@ -1,0 +1,170 @@
+@mixin common_scrollbar_firefox($fColor, $sColor) {
+  scrollbar-color: $fColor $sColor ;
+  scrollbar-width: thin ;
+}
+
+@mixin boxSizing($property){
+  -moz-box-sizing:    $property;
+  -webkit-box-sizing: $property;
+  box-sizing:         $property;
+}
+
+@mixin appearance($property){
+  -webkit-appearance: $property; /* Safari & Chrome */
+  -moz-appearance:    $property; /* Firefox */
+  -o-appearance:      $property; /* Opera */
+  appearance:         $property;
+}
+
+@mixin transition($property){
+  -webkit-transition: $property; /* Safari & Chrome */
+  -moz-transition:    $property; /* Firefox */
+  -ms-transition:     $property;
+  -o-transition:      $property; /* Opera */
+  transition:         $property;
+};
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+};
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+};
+
+@mixin image {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+};
+
+@mixin width($maxWidth) {
+  max-width: $maxWidth;
+  width: 100%;
+};
+
+@mixin media1075 {
+  @media (max-width: $screen-1075) {
+    @content;
+  }
+}
+@mixin media960 {
+  @media (max-width: $screen-960) {
+    @content;
+  }
+}
+@mixin media768 {
+  @media (max-width: $screen-768) {
+    @content;
+  }
+}
+@mixin media700 {
+  @media (max-width: $screen-700) {
+    @content;
+  }
+}
+
+@mixin media665 {
+  @media (max-width: $screen-665) {
+    @content;
+  }
+}
+
+@mixin media600 {
+  @media (max-width: $screen-600) {
+    @content;
+  }
+}
+@mixin media576 {
+  @media (max-width: $screen-576) {
+    @content;
+  }
+}
+@mixin media550 {
+  @media (max-width: $screen-550) {
+    @content;
+  }
+}
+@mixin media500 {
+  @media (max-width: $screen-500) {
+    @content;
+  }
+}
+@mixin media480 {
+  @media (max-width: $screen-480) {
+    @content;
+  }
+}
+
+@mixin media450 {
+  @media (max-width: $screen-450) {
+    @content;
+  }
+}
+
+@mixin media395 {
+  @media (max-width: $screen-395) {
+    @content;
+  }
+}
+@mixin media375 {
+  @media (max-width: $screen-375) {
+    @content;
+  }
+}
+@mixin media350 {
+  @media (max-width: $screen-350) {
+    @content;
+  }
+}
+
+@mixin comman_scrollbar_firefox($fcolor, $scolor) {
+  scrollbar-color: $fcolor $scolor ;
+  scrollbar-width: thin ;
+}
+
+//@mixin media700 {
+//  @media (max-width: $screen-700) {
+//    @content;
+//  }
+//}
+
+@mixin Slickbtn {
+  .slick-arrow{
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 13px 20px rgba(197 ,192, 224 ,1);
+    @include mediaQuery(1025px){
+      display: none;
+    }
+    svg{
+      right: 11px ;
+      top: 12px;
+      position: absolute;
+    }
+  }
+  .slick-next{
+    &::before{
+      display: none;
+    }
+  }
+}
+
+@mixin mediaQuery ($point) {
+  @media screen and (max-width:$point) {
+    @content;
+  }
+}
+@mixin minmediaQuery ($point) {
+  @media screen and (min-width:$point) {
+    @content;
+  }
+}

@@ -1,0 +1,1935 @@
+//------------------------------------------------ Add New Game ------------------------------------------------------------------
+.add_game_details {
+  .add_game_popup {
+    &_title {
+      border-bottom: 1px solid lightgray;
+      padding: 20px 32px 10px;
+      h2 {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+      p {
+        font-size: 13px;
+        color: #706f6f;
+      }
+    }
+    &_content {
+      padding: 20px 32px;
+      &_sub_title {
+        display: flex;
+        align-items: center;
+        .icon_game {
+          svg {
+            background: #efefef;
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            padding: 4px;
+            color: #0277bd;
+          }
+        }
+        &_content {
+          margin-left: 12px;
+          h3 {
+            font-size: 19px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 13px;
+            color: #706f6f;
+          }
+        }
+      }
+      &_form {
+        textarea {
+          border: 1px solid #d3d3d3;
+          border-radius: 5px;
+          margin-top: 5px;
+          padding: 10px;
+          width: 100%;
+          font-family: Inter, sans-serif !important;
+        }
+        .new_game_section {
+          //width: 300px;
+          padding-right: 0 !important;
+          .size-validation {
+            font-size: 12px;
+          }
+          .user_profile {
+            width: 100px;
+            //margin-left: auto;
+            .user_profile_pic {
+              img {
+                border-radius: 5% !important;
+              }
+              .addnew {
+                bottom: -3px;
+                right: -11px;
+              }
+            }
+          }
+        }
+        .add_game_section_content_form {
+          // align-items: center;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          .formData {
+            width: 49%;
+          }
+          .emailWrap {
+            position: relative;
+            margin-top: 5px;
+            width: 100%;
+            input {
+              width: 100% !important;
+              max-width: 100% !important;
+              &:focus {
+                outline: 1px solid #0277bd !important;
+              }
+            }
+            span {
+              position: absolute;
+              right: 9px;
+              top: 20px;
+              color: #a1a1a1;
+            }
+          }
+        }
+
+        .formData_btn {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 30px;
+        }
+        .select_label {
+          width: 100%;
+        }
+        .text_Wrap {
+          textarea {
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 10px;
+            &:focus {
+              outline: 1px solid #0277bd !important;
+            }
+          }
+        }
+        .tab01 {
+          margin-right: 10px;
+        }
+        .tab02 {
+          margin-right: 10px;
+        }
+        form {
+          margin-top: 20px;
+        }
+
+        .orientation_filed {
+          margin-left: 20px;
+        }
+        .popup_form {
+          label {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .emailWrap {
+            margin-top: 5px;
+            input {
+              padding: 10px;
+              max-width: 397px;
+              width: 100%;
+              border-radius: 5px;
+              height: 48px;
+              border: 1px solid #cfd8e3;
+            }
+          }
+        }
+        .popup_form_checkbox {
+          display: flex;
+          align-items: center;
+          // margin: 0 0 19px;
+          width: 100%;
+          margin-left: 10px;
+          label {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .platform_field {
+            position: relative;
+            display: flex;
+            margin-top: 4px;
+            .checkboxWrap {
+              background: #ebebeb;
+              margin: 5px;
+              padding: 5px 10px;
+              position: relative;
+              input {
+                cursor: pointer;
+                font-size: 0;
+                height: 100%;
+                left: 0;
+                opacity: 0;
+                padding-left: 26px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+              }
+              svg {
+                width: 30px;
+                height: 30px;
+                color: #424141;
+              }
+            }
+          }
+          .formData{
+            min-height: 100px;
+          }
+        }
+        .select_game_platform_value {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+          .filter-section-tab {
+            width: 100%;
+            height: 48px;
+            border: 1px solid #cfd8e3;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 0 10px;
+            .MuiFormControl-root.filter-inner-section-tab.css-1nrlq1o-MuiFormControl-root {
+              width: 100% !important;
+            }
+          }
+        }
+        .design_document {
+          margin-top: 20px;
+          &_title {
+            display: flex;
+            svg {
+              color: #0277bd;
+            }
+            .sub_title_content {
+              margin-left: 10px;
+              margin-bottom: 25px;
+
+              h4 {
+                font-weight: 500;
+                font-size: 19px;
+              }
+              p {
+                font-size: 13px;
+                line-height: 11px;
+                margin-top: 5px;
+                color: #706f6f;
+              }
+              .add_game_content {
+                line-height: 19px;
+              }
+              input {
+                padding: 10px;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #cfd8e3;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+                margin-top: 10px;
+                height: 48px;
+              }
+            }
+          }
+        }
+        .tab-left-side {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .select_label .MuiFormControl-root {
+    margin-top: 9px;
+  }
+  .select_label.game-number-of-player-merge {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+  }
+}
+
+//------------------------------------------------- Game details ------------------------------------------------------------------
+
+.game-details-section {
+  .game-details_header {
+    background: #0c0d13;
+    padding: 20px 32px;
+    color: white;
+    &_content {
+      @extend .d_flex;
+      @extend .justify_content_between;
+      &_left {
+        @extend .d_flex;
+        &_profile {
+          height: 100px;
+          width: 100px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &_content {
+          padding-left: 20px;
+          input {
+            width: 100%;
+            height: 39px;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 0 10px;
+            background: #0c0d13;
+            border: none;
+            color: $white;
+            font-weight: 600;
+            font-size: 17px;
+          }
+          .all_option_select {
+            top: 43px;
+            li {
+              color: black;
+              font-weight: 500;
+            }
+          }
+          .activeAddGame {
+            color: $black;
+            font-weight: 500;
+          }
+          .select_custom svg {
+            position: absolute;
+            top: 14px;
+            right: 15px;
+            color: white;
+          }
+          p {
+            margin-bottom: 7px;
+            color: lightgrey;
+          }
+        }
+      }
+      &_right {
+        text-align: right;
+        button {
+          padding: 8px 16px;
+          color: #0277bd;
+          border: 1px solid #0277bd;
+          border-radius: 4px;
+          font-weight: 500;
+          cursor: pointer;
+          font-family: "Inter", sans-serif;
+        }
+        .time_Zone_content {
+          padding-top: 18px;
+          .all_option_select {
+            top: 43px;
+            text-align: left;
+            li {
+              color: black;
+              //font-weight: 500;
+            }
+          }
+          .select_label {
+            display: flex;
+            align-items: center;
+          }
+          svg {
+            top: 13px;
+            color: #0277bd;
+          }
+          .select_custom {
+            width: 400px;
+          }
+          input {
+            width: 100%;
+            height: 39px;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 0 10px;
+            background: #0c0d13;
+            border: none;
+            color: #0277bd;
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .game_tab_overView {
+    &_title {
+      h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 21px;
+        font-family: "Inter", sans-serif !important;
+      }
+      p {
+        font-family: "Inter", sans-serif !important;
+        font-size: 14px;
+      }
+    }
+    &_content {
+      @extend .d_flex_between;
+      margin-top: 20px;
+      .game_tab_details {
+        text-align: center;
+        flex-basis: 20%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 15px;
+          font-weight: 700;
+        }
+        p {
+          color: #8e8c8c;
+          font-size: 20px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 32px;
+          text-align: center;
+          padding-top: 9px;
+        }
+      }
+    }
+  }
+  .optimize_tab_section {
+    .optimize_tab {
+      .basic_step_info {
+        .optimize_set_content {
+          display: flex;
+          //align-items: center;
+          justify-content: space-between;
+          .margin_Right {
+            margin-right: 10px;
+          }
+          .margin_Left {
+            margin-left: 10px;
+          }
+          .optimize_set_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ecedf0;
+            border-radius: 4px;
+            padding: 16px 16px;
+            flex-basis: 100%;
+            position: relative;
+            margin-top: 12px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            @media (max-width: 1070px) and (min-width: 960px) {
+              flex-basis: 100%;
+            }
+            @media (max-width: 820px) {
+              flex-basis: 100%;
+            }
+            .box_information {
+              width: calc(100% - 12px);
+              .box_title {
+                display: flex;
+                align-items: center;
+                p {
+                  display: flex;
+                  align-items: center;
+                  margin-left: 5px;
+                  font-family: "Inter", sans-serif;
+                  svg {
+                    color: #c81e1e;
+                  }
+                  span {
+                    font-size: 13px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    color: #c81e1e;
+                    font-weight: 500;
+                    font-family: "Inter", sans-serif;
+                  }
+                }
+                h3 {
+                  font-size: 20px;
+                  font-weight: 600;
+                  letter-spacing: 0;
+                  line-height: 32px;
+                  display: flex;
+                  align-items: center;
+                  font-family: "Inter", sans-serif;
+                }
+              }
+              .success_class {
+                span {
+                  color: #5b9f5b !important;
+                  margin-left: 5px;
+                  font-family: "Inter", sans-serif;
+                }
+              }
+              .note_description {
+                font-size: 13px;
+                letter-spacing: 0;
+                line-height: 20px;
+                color: #8e8c8c;
+                padding-right: 5px;
+                font-family: "Inter", sans-serif;
+              }
+            }
+          }
+        }
+      }
+      .configuration-customization {
+        display: flex;
+        justify-content: space-between;
+        .game_tab_overView.head_to_head_gameTab {
+          width: 100%;
+        }
+        .game-play {
+          margin-right: 20px;
+        }
+        .config {
+          margin-left: 20px;
+        }
+      }
+    }
+    .game_information_box {
+      .back_arrow {
+        padding: 32px 40px 0;
+        display: flex;
+        align-items: center;
+        color: #1976d2;
+        cursor: pointer;
+      }
+      .game_info_section {
+        .game_information_content {
+          .game-details-title {
+            text-align: start;
+            padding: 10px 10px 10px 0px;
+            width: 244px;
+            font-weight: bold;
+          }
+          td {
+            font-weight: 400;
+          }
+          .game-details-img {
+            img {
+              width: 90px;
+              height: 90px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .edit_game_info_section {
+      .formData_btn {
+        //width: 488px;
+        margin-top: 30px;
+      }
+      form {
+        .game_info_edit_form {
+          display: flex;
+
+          .game_edit_info {
+            margin-left: 50px;
+          }
+          label {
+            color: black;
+          }
+          textarea {
+            width: 100%;
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 10px;
+            font-family: Inter, sans-serif;
+            &:focus {
+              outline: 1px solid #0277bd !important;
+            }
+          }
+          .d_flex_filed {
+            display: flex;
+            align-items: center;
+            //max-width: 488px;
+            input {
+              width: 100%;
+              max-width: 100%;
+              height: 48px;
+            }
+            .field_left {
+              width: 100%;
+              //margin-right: 10px;
+            }
+            .field_right {
+              width: 100%;
+              margin-left: 10px;
+            }
+          }
+        }
+
+        input {
+          //max-width: 488px;
+          width: 100%;
+        }
+        textarea {
+          //max-width: 488px;
+          width: 100%;
+          position: relative;
+          display: flex;
+          align-items: stretch;
+          min-height: 48px;
+          border-radius: 6px;
+          padding: 10px 16px;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          background-color: white;
+          border: 1px solid #cfd8e3;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  .config-data {
+    textarea {
+      width: 100%;
+      border: 1px solid #cfd8e3;
+      border-radius: 5px;
+      padding: 9px;
+      font-family: "Inter", sans-serif !important;
+      &:focus {
+        outline: 1px solid #0277bd !important;
+      }
+    }
+  }
+  .tracking_players_section {
+    .tracking_players_form {
+      button {
+        margin: 0;
+      }
+      .radius_location_form {
+        display: block;
+        .tracking-days-game {
+          width: 100%;
+          //padding-left: 30px;
+          .formData {
+            input {
+              display: flex;
+              align-items: stretch;
+              min-height: 48px;
+              border-radius: 6px;
+              padding: 0 16px;
+              background-color: white;
+              border: 1px solid #cfd8e3;
+              margin-bottom: 10px;
+              margin-top: 7px;
+              width: 25%;
+            }
+          }
+        }
+      }
+    }
+    .scoreBoard-details-section {
+      .content {
+        .header {
+          display: flex;
+          gap: 1rem;
+          margin: 0rem 2rem;
+          .col {
+            align-items: center;
+            display: flex;
+            flex: 1 1;
+            flex-wrap: wrap;
+            font-weight: 700;
+            border-right: 1px solid lightgrey;
+            .col_title {
+              text-align: center;
+              //width: 100%;
+            }
+            img {
+              width: 70px;
+              height: 70px;
+
+              object-fit: cover;
+              border-radius: 50%;
+              margin: 0 auto;
+            }
+            h2 {
+              font-size: 14px;
+              margin-top: 5px;
+            }
+          }
+        }
+        .row {
+          //padding: 2rem;
+          //display: flex;
+          //gap: 1rem;
+          //border-radius: 10px;
+          //margin-bottom: 2rem;
+          //padding: 12px 0;
+          display: flex;
+          gap: 1rem;
+          border-radius: 10px;
+          border: 1px solid lightgrey;
+          margin: 0 2rem;
+
+          .col {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            border-right: 1px solid lightgrey;
+            .avatar {
+              width: 4rem;
+              height: 4rem;
+              color: black;
+              border-radius: 5px;
+              margin-right: 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+    .view_score_board_table {
+      width: 100%;
+      border-collapse: collapse;
+      .head_to_head_gameTab_table {
+        margin: 0 !important;
+      }
+      .game_tab_overView_title {
+        justify-content: center !important;
+        margin-bottom: 20px;
+      }
+
+      .view_scoreBoard_th {
+        text-align: center;
+        border-left: 1px solid #cfd8dc !important;
+        border-bottom: 1px solid #cfd8dc;
+        padding: 9px 10px 10px 24px;
+        min-width: 100px;
+        font-family: "Inter", sans-serif !important;
+        &:first-child {
+          border-left: 0 solid #cfd8dc !important;
+        }
+        .table_td_span {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+
+      .view_td_scoreBoard {
+        text-align: center !important;
+        border-left: 1px solid #cfd8dc !important;
+        padding: 9px 10px 10px 24px;
+        border-bottom: 1px solid #cfd8dc;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #27303f;
+        line-height: 30px;
+        vertical-align: middle;
+        background: white !important;
+        font-family: "Inter", sans-serif !important;
+      }
+      .border_remove {
+        border-left: 0 solid #cfd8dc !important;
+      }
+      .view_td_scoreBoard_Score {
+        text-align: center !important;
+        padding: 9px 10px 10px 24px;
+        border-bottom: 1px solid #cfd8dc;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #27303f;
+        line-height: 30px;
+        vertical-align: middle;
+        background: white !important;
+        font-family: "Inter", sans-serif !important;
+      }
+      .view_td_scoreBoard_Score.round_td {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// .gst-dropdown_width {
+//   width: 58%;
+// }
+
+.create_headToHead_modal_view {
+  .add_admin_user_popup_title {
+    padding: 0;
+  }
+}
+
+.create_headToHead_modal {
+  .formData {
+    .emailWrap {
+      position: relative;
+      span {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+        color: #97a6ba;
+      }
+      .wrap_input_modal {
+        padding-right: 50px;
+      }
+    }
+  }
+
+  form {
+    //padding: 0 32px 32px 32px;
+    //height: 79vh;
+    //overflow: auto;
+    .formData {
+      margin-bottom: 10px;
+      width: 100%;
+      input {
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+      input:focus {
+        outline: 1px solid #1976d2 !important;
+      }
+      select:focus,
+      textarea:focus {
+        outline: 1px solid #1976d2 !important;
+      }
+      .emailWrap {
+        position: relative;
+        span {
+          position: absolute;
+          top: 15px;
+          right: 12px;
+          color: #97a6ba;
+        }
+        .wrap_input_modal {
+          padding-right: 50px;
+        }
+      }
+    }
+    .tournament_entry_fee {
+      width: 50%;
+    }
+    .dropdown-heading {
+      margin-top: 5px;
+      position: relative;
+      display: flex;
+      min-height: 48px;
+      border-radius: 4px;
+      padding: 0 16px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      background-color: white;
+      border: 1px solid #cfd8e3 !important;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      color: #64748b;
+    }
+    .dropdown-container {
+      border: none !important;
+    }
+    .form_amount_tab01,
+    .form_amount_tab02 {
+      width: 100%;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .form_amount_tab01 {
+      margin-right: 10px;
+    }
+
+    .form_amount_tab02 {
+      margin-left: 10px;
+      input {
+        cursor: initial;
+        background: #e2e8f0;
+      }
+    }
+    .tab02_inner_class {
+      input {
+        cursor: auto;
+        background: white;
+      }
+    }
+    .select-item.selected {
+      background: #e2e8f0 !important;
+    }
+    .dropdown-content {
+      position: absolute !important;
+      z-index: 1 !important;
+      top: 100% !important;
+      width: 100% !important;
+      padding-top: 8px !important;
+    }
+    .country-user-details {
+      input {
+        box-shadow: none !important;
+        height: auto !important;
+        min-height: auto !important;
+        border: none !important;
+      }
+      .select-panel {
+        .css-1gqp1kh {
+          input {
+            border: none !important;
+          }
+        }
+      }
+    }
+    .formData {
+      label {
+        display: flex;
+        align-items: center;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .checkbox_field_tournament {
+        min-height: auto;
+        box-shadow: none;
+        width: auto;
+      }
+    }
+    .d-flex-wrap {
+      display: flex;
+      align-items: center;
+      .form_data_field {
+        display: flex;
+        label {
+          margin-left: 5px;
+        }
+        input {
+          width: 17px;
+          height: 17px;
+          cursor: pointer;
+          &:focus {
+            outline: none !important;
+          }
+        }
+      }
+      .tab_no {
+        margin-left: 20px;
+      }
+    }
+    .tournament_setting_content {
+      h3 {
+        font-weight: 600;
+        font-size: 17px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .tournament_setting_amount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+      }
+    }
+    .tournament_setting_content.prize_amount {
+      margin: 0px;
+      .formData {
+        margin-bottom: 0;
+      }
+      h3 {
+        margin-top: 15px;
+      }
+      .tournament_setting_amount {
+        margin-top: 10px;
+      }
+    }
+    .mangingRight_tab {
+      margin-right: 10px;
+    }
+    .tournament_setting_content {
+      .tournament_title_field {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+    }
+    .time_zone_tournament {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .date-show {
+        height: 48px;
+        border: 1px solid #cfd8e3;
+        border-radius: 4px;
+        margin-right: 10px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        input {
+          height: 100% !important;
+          min-height: 100% !important;
+          border: none !important;
+          box-shadow: none;
+        }
+      }
+      .d-flex_wrap {
+        display: flex;
+        align-items: center;
+        .emailWrap {
+          width: 100%;
+        }
+        .tournamentTab01 {
+          margin-right: 5px;
+        }
+        .tournamentTab02 {
+          margin-left: 5px;
+        }
+      }
+    }
+    .repeatEvery {
+      display: flex;
+      align-items: center;
+      .tournamentTab01 {
+        width: 100px;
+        margin-right: 10px;
+      }
+    }
+    .checkbox_input {
+      .emailWrap {
+        display: flex;
+        input {
+          min-height: auto;
+          box-shadow: none;
+          width: 19px;
+          height: 19px;
+          border: 1px solid rgb(226, 232, 240);
+          cursor: pointer;
+          &:focus {
+            outline: none !important;
+          }
+        }
+        label {
+          margin-left: 5px;
+        }
+      }
+    }
+    .prize-tab0 {
+      margin-right: 5px;
+    }
+    .prize-tab01 {
+      margin: 0 5px;
+    }
+    .prize-tab02 {
+      margin-left: 5px;
+    }
+    .add_row {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        color: #1976d2;
+        border: none;
+        background: transparent;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//game_leaderboard_config
+
+.h2h_details_view_popup {
+  .headToHead_popup_details {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    .formData {
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+      label {
+        width: 55%;
+        font-weight: 700 !important;
+      }
+    }
+  }
+  .headToHead_popup_winning_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_left {
+      width: 50%;
+      text-align: center;
+      margin-top: 20px;
+      h2 {
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 36px;
+      }
+    }
+    label {
+      font-weight: 600;
+    }
+    &_right {
+      width: 50%;
+      text-align: center;
+      margin-top: 20px;
+      h2 {
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+.game_active_list_details_pop {
+  .headToHead_popup_details {
+    border-bottom: none;
+    .formData {
+      display: flex;
+    }
+    .formData label {
+      width: 50%;
+      font-weight: 700 !important;
+    }
+  }
+}
+.country_availability {
+  .MuiBox-root.css-g69k3t {
+    padding: 0 !important;
+    .add_admin_user_popup_title {
+      padding: 20px 30px;
+    }
+  }
+}
+.country_availability_details {
+  padding: 0 30px 30px;
+  max-height: 70vh;
+  overflow: auto;
+  .country_availability_details_info {
+    margin-bottom: 8px;
+  }
+}
+
+.game_release_section_modal {
+  .filter_days_details_dropDown.gst-dropdown_width {
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+}
+
+.view_score_board_table {
+  width: 100%;
+  border-collapse: collapse;
+  .head_to_head_gameTab_table {
+    margin: 0 !important;
+  }
+  .game_tab_overView_title {
+    justify-content: center !important;
+    margin-bottom: 20px;
+  }
+
+  .view_scoreBoard_th {
+    text-align: center;
+    border-left: 1px solid #cfd8dc !important;
+    border-bottom: 1px solid #cfd8dc;
+    padding: 9px 10px 10px 24px;
+    min-width: 100px;
+    font-family: "Inter", sans-serif !important;
+    &:first-child {
+      border-left: 0 solid #cfd8dc !important;
+    }
+    .table_td_span {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+      }
+    }
+    h2 {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .view_td_scoreBoard {
+    text-align: center !important;
+    border-left: 1px solid #cfd8dc !important;
+    padding: 9px 10px 10px 24px;
+    border-bottom: 1px solid #cfd8dc;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #27303f;
+    line-height: 30px;
+    vertical-align: middle;
+    background: white !important;
+    font-family: "Inter", sans-serif !important;
+  }
+  .border_remove {
+    border-left: 0 solid #cfd8dc !important;
+  }
+  .view_td_scoreBoard_Score {
+    text-align: center !important;
+    padding: 9px 10px 10px 24px;
+    border-bottom: 1px solid #cfd8dc;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #27303f;
+    line-height: 30px;
+    vertical-align: middle;
+    background: white !important;
+    font-family: "Inter", sans-serif !important;
+  }
+  .view_td_scoreBoard_Score.round_td {
+    font-weight: 600;
+  }
+  .font-bold-card {
+    font-weight: 700;
+  }
+  .view_td_scoreBoard {
+    .card-view {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    img {
+      width: 43px;
+    }
+  }
+
+  .change-row-color {
+    background: black !important;
+    .view_td_scoreBoard_Score.round_td,
+    .view_td_scoreBoard_Score {
+      color: white !important;
+      background: black !important;
+    }
+  }
+}
+
+.game_input_chars {
+  position: relative;
+  width: 100%;
+  textarea {
+    width: 100%;
+  }
+  .game_edit_info_span {
+    bottom: 7px !important;
+  }
+  span {
+    position: absolute;
+    top: auto !important;
+    bottom: 13px !important;
+    right: 14px !important;
+    font-size: 14px;
+  }
+}
+.game_left_side_info {
+  width: 50%;
+}
+.mt_margin {
+  margin-top: 7px;
+}
+.release_note_details {
+  .ql-editor {
+    max-height: 104px;
+    min-height: 104px;
+    overflow: auto;
+  }
+}
+.how_to_play_game {
+  .ql-editor {
+    max-height: 104px;
+    min-height: 350px;
+    overflow: auto;
+  }
+}
+
+.games_add_new_games_logo_poster {
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.games_add_new_games_poster {
+  margin-right: 80px;
+}
+.form_tabledata {
+  display: flex;
+  gap: 5px;
+  align-items: unset;
+}
+// //////////////////////////////////// Responsive Page ////////////////////
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  // Mobile View
+  //Add New Game Page Start
+  .add_game_section_content_form {
+    display: unset !important;
+    .formData {
+      width: 100% !important;
+    }
+  }
+  .profile {
+    justify-content: start !important;
+  }
+  .new_game_section {
+    margin-top: 1rem;
+  }
+  .select_game_platform_value {
+    display: unset !important;
+  }
+  .popup_form_checkbox {
+    display: unset !important;
+  }
+  .orientation_filed {
+    margin-left: 0 !important;
+  }
+  //Add New Game Page End
+
+  //Games Page Start
+  .css-104ak8c {
+    width: 300px !important;
+    overflow: scroll;
+    height: 400px;
+  }
+  //Games Page End
+  //Score Board start
+  .css-1dqynlz,
+  .css-1pvmwc {
+    width: 300px !important;
+  }
+  //Score Board start
+  //game tab start
+  .game-details-section {
+    .game-details_header {
+      padding: 20px;
+      .game-details_header_content {
+        flex-wrap: wrap;
+        .game-details_header_content_right {
+          margin-top: 10px !important;
+        }
+      }
+    }
+  }
+  ////game tab end
+  //game tab start
+  .game_setup {
+    .configuration-customization {
+      flex-wrap: wrap !important;
+      .game_tab_overView.head_to_head_gameTab {
+        margin: 10px 0 !important;
+      }
+    }
+  }
+  //game tab end
+  //Game builds start
+  .css-db32qb {
+    width: 300px !important;
+    .add_admin_user_popup_content {
+      .manage_game_builds {
+        .field_tab_build01 {
+          .manage_game_builds_details_flex {
+            display: unset !important;
+            .mb_build {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+    }
+    .release_build {
+      margin-top: 10px !important;
+    }
+  }
+  //Game builds start
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  // Tablet View
+  //All Games Page Start
+  .filter_export_date_dropdown {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .filter_export_date_dropdown {
+    flex-wrap: wrap !important;
+    margin-top: 10px;
+  }
+  .filter_export_details_dropDown {
+    width: 45% !important;
+  }
+  .filter_days_details_dropDown {
+    width: 45% !important;
+  }
+  //All Games Page End
+
+  //Game builds start
+  .css-db32qb {
+    width: 700px !important;
+  }
+  //Game builds start
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  // Laptop View
+  //All Games Page Start
+  .filter_export_date_dropdown {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+  .filter_export_date_dropdown {
+    flex-wrap: wrap !important;
+    margin-top: 10px;
+  }
+  .filter_export_details_dropDown {
+    width: 45% !important;
+  }
+  .filter_days_details_dropDown {
+    width: 45% !important;
+  }
+  //All Games Page End
+}
+
+.game_right_side {
+  display: flex;
+  align-items: center;
+  .inner-header.game-header-inner.MuiBox-root.css-0 {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .game-details_header_content_right {
+    margin-top: 0;
+  }
+}
+.minor_head_section{
+  width: 100%;
+  margin-top: 5px;
+  .MuiFormControl-root{
+    width: 100%;
+  }
+  // .select-dropdown-main .MuiSelect-select.MuiSelect-select{
+  //   padding: 0 4px !important;
+  // }
+  .ForwardRef\(InputBase\)-root-78.MuiInputBase-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.select-dropdown-main.filter_dropdown_list.css-1le28he-MuiInputBase-root{
+    width: 100%;
+  }
+}
+//------------------------------------------- tournament----------------------
+
+.create_recurring_tournament {
+  .add_admin_user_popup_content {
+    max-height: 85vh;
+    overflow: auto;
+    padding: 0 32px 32px;
+  }
+  .form_tabledata{
+    align-items: start;
+  }
+  .add_field, .remove_field{
+    height: 46px;
+    margin-top: 24px;
+  }
+  .ml_margin{
+    margin-left: 10px;
+  }
+  .mr_margin{
+    margin-right: 10px;
+  }
+  .filter_days_details_dropDown{
+    margin-top: 5px !important;
+  }
+  .user_profile{
+    width: 137px;
+    .user_profile_pic{
+      img{
+        border-radius: 2px !important;
+      }
+       .addnew {
+        bottom: -6px;
+        height: 30px;
+        position: absolute;
+        right: -11px;
+        width: 30px;
+      }
+    }
+  }
+ form .formData .emailWrap span {
+    top: 20px !important;
+  }
+  .number_of_player{
+
+  }
+}
+
+.CreateRecurringTournament {
+  .css-sseanl {
+    padding: 0;
+  }
+  .add_admin_user_popup_title {
+    padding: 32px 32px 0;
+  }
+  .create_headToHead_modal {
+    .formData {
+      .emailWrap {
+        position: relative;
+        span {
+          position: absolute;
+          top: 15px;
+          right: 12px;
+          color: #97a6ba;
+        }
+        .wrap_input_modal {
+          padding-right: 50px;
+        }
+      }
+    }
+
+    form {
+      padding: 0 32px 32px 32px;
+      height: 79vh;
+      overflow: auto;
+      .date-picker_coupon {
+        .datePicker_details {
+          width: 100%;
+        }
+      }
+      .formData {
+        //margin-bottom: 10px;
+        width: 100%;
+        input {
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        input:focus {
+          outline: 1px solid #1976d2 !important;
+        }
+        select:focus,
+        textarea:focus {
+          outline: 1px solid #1976d2 !important;
+        }
+        .emailWrap {
+          position: relative;
+          span {
+            position: absolute;
+            top: 15px;
+            right: 12px;
+            color: #97a6ba;
+          }
+          .wrap_input_modal {
+            padding-right: 50px;
+          }
+        }
+      }
+      .tournament_entry_fee {
+        width: 50%;
+      }
+      .dropdown-heading {
+        margin-top: 5px;
+        position: relative;
+        display: flex;
+        min-height: 48px;
+        border-radius: 4px;
+        padding: 0 16px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        background-color: white;
+        border: 1px solid #cfd8e3 !important;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        color: #64748b;
+      }
+      .dropdown-container {
+        border: none !important;
+      }
+      .form_amount_tab01,
+      .form_amount_tab02 {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        label {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .form_amount_tab01 {
+        margin-right: 10px;
+      }
+      .form_amount_tab02 {
+        margin-left: 10px;
+        input {
+          cursor: initial;
+          background: #e2e8f0;
+        }
+      }
+      .tab02_inner_class {
+        input {
+          cursor: auto;
+          background: white;
+        }
+      }
+      .select-item.selected {
+        background: #e2e8f0 !important;
+      }
+      .dropdown-content {
+        position: absolute !important;
+        z-index: 1 !important;
+        top: 100% !important;
+        width: 100% !important;
+        padding-top: 8px !important;
+      }
+      .country-user-details {
+        input {
+          box-shadow: none !important;
+          height: auto !important;
+          min-height: auto !important;
+          border: none !important;
+        }
+        .select-panel {
+          .css-1gqp1kh {
+            input {
+              border: none !important;
+            }
+          }
+        }
+      }
+      .formData {
+        label {
+          display: flex;
+          align-items: center;
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .checkbox_field_tournament {
+          min-height: auto;
+          box-shadow: none;
+          width: auto;
+        }
+      }
+      .d-flex-wrap {
+        display: flex;
+        align-items: center;
+        .form_data_field {
+          display: flex;
+          label {
+            margin-left: 5px;
+          }
+          input {
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+            &:focus {
+              outline: none !important;
+            }
+          }
+        }
+        .tab_no {
+          margin-left: 20px;
+        }
+      }
+      .tournament_setting_content {
+        h3 {
+          font-weight: 600;
+          font-size: 17px;
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .tournament_setting_amount {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 15px;
+        }
+      }
+      .tournament_setting_content.prize_amount {
+        margin: 0px;
+        .formData {
+          margin-bottom: 0;
+        }
+        h3 {
+          margin-top: 15px;
+        }
+        .tournament_setting_amount {
+          margin-top: 10px;
+        }
+      }
+      .mangingRight_tab {
+        margin-right: 10px;
+      }
+      .tournament_setting_content {
+        .tournament_title_field {
+          font-size: 15px;
+          margin-bottom: 12px;
+        }
+      }
+      .time_zone_tournament {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .date-show {
+          height: 48px;
+          border: 1px solid #cfd8e3;
+          border-radius: 4px;
+          margin-right: 10px;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+          input {
+            height: 100% !important;
+            min-height: 100% !important;
+            border: none !important;
+            box-shadow: none;
+          }
+        }
+        .d-flex_wrap {
+          display: flex;
+          align-items: center;
+          .emailWrap {
+            width: 100%;
+          }
+          .tournamentTab01 {
+            margin-right: 5px;
+          }
+          .tournamentTab02 {
+            margin-left: 5px;
+          }
+        }
+      }
+      .repeatEvery {
+        display: flex;
+        align-items: center;
+        .tournamentTab01 {
+          width: 100px;
+          margin-right: 10px;
+        }
+      }
+      .checkbox_input {
+        .emailWrap {
+          display: flex;
+          input {
+            min-height: auto;
+            box-shadow: none;
+            width: 19px;
+            height: 19px;
+            border: 1px solid rgb(226, 232, 240);
+            cursor: pointer;
+            &:focus {
+              outline: none !important;
+            }
+          }
+          label {
+            margin-left: 5px;
+          }
+        }
+      }
+      .prize-tab0 {
+        margin-right: 5px;
+      }
+      .prize-tab01 {
+        margin: 0 5px;
+      }
+      .prize-tab02 {
+        margin-left: 5px;
+      }
+      .add_row {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        button {
+          color: #1976d2;
+          border: none;
+          background: transparent;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.create_headToHead_modal_view {
+  .add_admin_user_popup_title {
+    padding: 0;
+  }
+}
+
+.d_flex_component{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .user_profile{
+    .user_profile_pic{
+      .addnew{
+        img{
+          width: unset !important;
+    height: unset !important;
+        }
+      }
+    }
+    
+  }
+}
+
+.leaderboard_section_game{
+  .tab .tab_bg_white{
+    padding: 0;
+  }
+}
+
+.game_history_filter_details{
+  margin-right: 5px;
+  height: 51px;
+  .rmsc.inner_popular_game_dropdown.all_game_dropdown_details{
+    height: 51px;
+    .dropdown-container{
+      height: 100%;
+      width: 230px;
+      // margin-top: -5px;
+      .dropdown-heading{
+        height: 100%;
+      }
+    }
+  }
+  .dropdown-content {
+    //top: 0px !important;
+    padding: 0 !important;
+    input {
+      margin: 10px 10px !important;
+      border: 1px solid lightgrey !important;
+      border-radius: 5px;
+      width: 90% !important;
+      padding-right: 30px !important;
+      &:focus {
+        outline: none !important;
+      }
+    }
+    .item-renderer {
+      display: flex !important;
+      align-items: center !important;
+      label {
+        padding: 5px 10px !important;
+      }
+      input {
+        width: auto !important;
+      }
+    }
+    ul {
+      li {
+        label {
+          padding: 5px 10px !important;
+        }
+        input {
+          width: auto !important;
+        }
+      }
+    }
+    svg {
+      margin-left: -50px !important;
+    }
+  }
+
+}
+
+.game_build_details_table{
+  .tab .tab_bg_white{
+    padding: 0;
+  }
+}
+
+
+.game_details_info_section{
+  .let_section{
+    width: 100% ;
+  }
+}
+
+.normsLi{
+  color: red;
+}
+
+.player_poker_game_view_main{
+  border: 1px dashed lightgrey;
+  padding: 20px;
+  margin: 20px 40px;
+  .player_poker_game_view{
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+}
+.w_181{
+  width: 181px;
+}
+
+.poker_game_view_pot{
+  .OverView_pagination{
+    padding: 0 ;
+  }
+  .port_main_table{
+    margin: 0 40px;
+    .MuiTableContainer-root.data-table.css-rorn0c-MuiTableContainer-root{
+      border: 1px dashed lightgray;
+      padding: 20px 20px;
+    }
+  }
+  .player_poker_game_view_main{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    margin: 20px 40px;
+    .player_poker_game_view{
+      display: flex;
+      //padding: 0 30px;
+      justify-content: space-between;
+      align-items: center;
+      .poker_box{
+        padding: 18px 74px;
+        border: 1px dashed lightgrey;
+        text-align: center;
+
+        h3{
+          color: #444343;
+          font-size: 16px;
+          letter-spacing: normal;
+          text-transform: capitalize;
+          text-align: left;
+          font-family: "Inter", sans-serif !important;
+        }
+        p{
+          color: #0277bd;
+          font-size: 18px;
+          font-weight: 500;
+          font-family: "Inter", sans-serif !important;
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}

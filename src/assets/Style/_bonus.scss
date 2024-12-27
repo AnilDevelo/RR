@@ -1,0 +1,689 @@
+.monthly-refer-and-earn-config {
+  .user_kyc_section_filed {
+    margin-top: 0;
+  }
+  .config-refer-section {
+    display: flex;
+    .config-refer-section-left-main {
+      width: 100%;
+      margin-top: 5px;
+      .config-refer-section-left {
+        display: flex;
+        // align-items: center;
+
+        //margin-top: 5px;
+        .user_kyc_section.tab-01 {
+          width: 100%;
+          margin-right: 5px !important;
+        }
+        .user_kyc_section.tab-02 {
+          width: 100%;
+          margin-left: 5px !important;
+        }
+      }
+    }
+    .right-section {
+      width: 100%;
+      margin-left: 10px;
+      margin-top: 22px;
+    }
+  }
+  .center-to {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 7px;
+    margin-top: 3rem;
+  }
+}
+
+.add_daily_wheel_bonus_pop {
+  .filter_export_details_dropDown {
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #cfd8e3;
+    border-radius: 5px;
+    padding: 9px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+
+    font-family: "Inter", sans-serif !important;
+    &:focus {
+      outline: 1px solid #0277bd !important;
+    }
+  }
+  .daily_wheel_bonus_type_list {
+    padding-left: 20px;
+    li {
+      padding: 5px 0;
+    }
+  }
+  .daily-bonus-details {
+    width: 100%;
+    display: flex;
+    .date-picker_coupon.monthly-bonus-type {
+      width: 100%;
+    }
+    .daily_wheel_bonus_input_filed {
+      margin-left: 10px;
+    }
+    .daily_wheel_bonus_input_filed {
+      input {
+        margin: 0;
+      }
+    }
+  }
+  .daily_wheel_bonus_section_filed {
+    .label-border {
+      padding-bottom: 10px;
+      border-bottom: 1px solid;
+      width: 100%;
+    }
+  }
+}
+.monthly-bonus-type .filter_days_details_dropDown {
+  margin-top: 7px;
+}
+.coupon_section_form_title,
+.offer-details-section-title {
+  padding: 32px 32px 10px 32px;
+}
+.offer-details-section {
+  form {
+    max-height: 70vh;
+    overflow: auto;
+    padding: 0 32px 32px;
+    margin: 0;
+    .start-date-picker {
+      margin: 0 !important;
+    }
+    .date-picker_coupon {
+      margin-top: 5px;
+    }
+  }
+}
+// .coupon_section_form_title{
+//   padding: 32px 32px 0 32px !important;
+// }
+.coupon_form_details {
+  form {
+    max-height:71vh;
+    overflow: auto;
+    padding: 0 32px 32px;
+  }
+}
+.coupon_section_form {
+  .filter_data_radio {
+    margin-bottom: 5px;
+    .filter_data_radio_sub {
+      display: flex;
+      align-items: center;
+      .tab_field_right {
+        margin-left: 5px;
+      }
+      .tab_field_left {
+        margin-right: 5px;
+      }
+    }
+    input {
+      min-height: auto;
+      box-shadow: none;
+      width: auto;
+      cursor: pointer;
+    }
+    .filter_data_radio_field {
+      display: flex;
+      align-items: center;
+      input {
+        margin-right: 5px;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+  .date-picker_coupon {
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    input {
+      border: none;
+      box-shadow: none;
+      height: auto;
+      min-height: auto !important;
+      box-shadow: none;
+      padding: 0 10px !important;
+      font-family: "Inter", sans-serif !important;
+      font-weight: 500 !important;
+    }
+    .date_picker_value {
+      border-radius: 6px;
+      padding: 0;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      background-color: white;
+      border: 1px solid #cfd8e3;
+      width: 100%;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      .MuiInputBase-formControl {
+        height: 48px !important;
+      }
+    }
+    .start-date-picker,
+    .end-date-picker {
+      width: 100%;
+    }
+    .start-date-picker {
+      margin-right: 10px;
+    }
+    .end-date-picker {
+      margin-left: 10px;
+    }
+  }
+  .date_picker_value{
+    .MuiFormControl-root{
+      width:100%
+    }
+  }
+  textarea {
+    border-radius: 6px;
+    padding: 11px 16px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border: 1px solid #cfd8e3;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+
+.bonus_type_section {
+  margin-top: 11px;
+  .main_label {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .bonus_type_content_text {
+    margin-top: 14px;
+    .daily_wheel_bonus_section_filed {
+      display: flex;
+      align-items: center;
+      label {
+        width: 200px;
+      }
+      .daily_wheel_bonus_input_filed {
+        width: 100%;
+      }
+    }
+  }
+  .bonus_type_content {
+    display: flex;
+    align-items: center;
+    .type_first {
+      margin-right: 10px;
+    }
+    .type_sec {
+      margin-left: 10px;
+    }
+    .daily_wheel_bonus_section_filed {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      label {
+        width: 139px;
+      }
+    }
+  }
+  .daily_wheel_bonus_section_checkbox {
+    display: flex;
+    align-items: center;
+    .checkbox_input {
+      box-shadow: none !important;
+      height: 18px;
+      min-height: auto;
+      width: 18px;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+.offer-description {
+  margin-top: 10px;
+}
+
+.refer_form_details {
+  h2 {
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+  .formData {
+    margin-top: 0;
+  }
+  .refer_form_sub_details {
+    .refer_form_details_filed,
+    .formData {
+      width: 100%;
+    }
+
+    .filter_days_details_dropDown {
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.date-previous-month-filter {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 10px;
+  .start-date-picker {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0 0 0 11px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.css-1sy1a1q-MuiTypography-root-PrivatePickersMonth-root {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+}
+
+.leader_board_game_list_filter {
+  margin: 32px 0 0 40px;
+  max-width: 300px;
+  width: 100%;
+}
+input#mui-36 {
+  padding: 0;
+}
+
+.refer-and-config-point-details {
+  display: flex;
+  .tab-01 {
+    margin-right: 10px;
+  }
+  .tab-02 {
+    margin-left: 10px;
+  }
+  .user_kyc_section {
+    width: 100%;
+  }
+}
+
+.add_daily_wheel_bonus_pop {
+  .filter_days_details_dropDown {
+    margin-top: 7px;
+  }
+  .daily_wheel_bonus_input_filed {
+    .ForwardRef\(InputBase\)-input-15 {
+      padding: 12px 26px 13px 12px !important;
+      height: auto !important;
+    }
+    .filter_export_details_dropDown {
+      margin-bottom: 0;
+    }
+  }
+  .ForwardRef\(InputBase\)-input-11 {
+    padding: 12px 26px 13px 12px !important;
+  }
+  .main_spin_division {
+    font-weight: 700 !important;
+  }
+  .bonus_type_content_text {
+    margin-top: 33px;
+  }
+  .daily_wheel_bonus_spin_section {
+    margin-bottom: 10px;
+    .daily_bonus_details_section {
+      .referral_booster {
+        margin-top: 10px;
+        .daily_wheel_bonus_input_filed {
+          input {
+            margin-bottom: 0;
+          }
+        }
+        .ml {
+          margin-left: 5px;
+        }
+        .mr {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .add_cash_section {
+    margin-top: 10px;
+    .gst-dropdown_width {
+      width: 100%;
+    }
+    .daily_wheel_bonus_input_filed input {
+      margin-bottom: 0;
+    }
+    .ml {
+      margin-left: 5px;
+    }
+    .mr {
+      margin-right: 5px;
+    }
+  }
+}
+
+.monthly-refer-earn-details-table .outerbox {
+  margin: 0;
+}
+
+.monthly-refer-earn-details-table {
+  display: flex;
+  margin: 32px 40px;
+  @media screen and (max-width: 1390px) {
+    display: block;
+    margin: 0;
+  }
+  .outer-box {
+    margin: 0;
+    @media screen and (max-width: 1390px) {
+      margin: 32px 40px;
+    }
+    table {
+      min-width: 300px;
+    }
+  }
+  .monthly-bonus-amount {
+    width: 50%;
+    margin-right: 20px;
+    @media screen and (max-width: 1390px) {
+      margin-right: 0px;
+    }
+  }
+  .monthly-bonus-release-date {
+    width: 50%;
+    margin-left: 20px;
+    @media screen and (max-width: 1390px) {
+      margin-left: 0px;
+    }
+  }
+}
+
+.daily_bonus_spin_dropdown {
+  .modal_popup_title {
+    h2 {
+      font-size: 21px;
+    }
+  }
+  .filter_days_details_dropDown {
+    width: 100%;
+    margin-top: 7px;
+    .MuiFormControl-root {
+      width: 100%;
+    }
+  }
+}
+.daily_wheel_bonus_popup {
+  .mt_daily_bonus {
+    margin-top: 7px;
+  }
+  .modal_popup_title {
+    padding: 32px 32px 20px;
+  }
+  .form {
+    overflow: auto;
+    max-height: 71vh;
+    padding: 0 32px 32px;
+  }
+  .daily_wheel_bonus_spin_section.dropdown_part {
+    .ml {
+      margin-left: 10px;
+    }
+    .mr {
+      margin-right: 10px;
+    }
+  }
+  .mini_boosters {
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+
+.formData {
+  .emailWrap {
+    position: relative;
+    span {
+      position: absolute;
+      top: 15px;
+      right: 12px;
+      color: #97a6ba;
+    }
+    .wrap_input_modal {
+      padding-right: 50px;
+    }
+  }
+}
+.couponCodeDescription{
+    textarea {
+      width: 100%;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      margin-top: 5px;
+      padding: 10px;
+      font-size: 14px;
+      font-family: "Inter", sans-serif;
+      &:focus {
+        outline: 1px solid #0277bd !important;
+      }
+    }
+  }
+// //////////////////////////////////// Responsive Page ////////////////////
+// Daily Spin Bonus Page
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  // Mobile View
+  // Daily Spin Bonus Page start
+  .outer-box {
+    margin: 14px !important;
+  }
+  .monthly-bonus-amount {
+    width: auto !important;
+  }
+  .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .css-ea84yb {
+    width: 300px !important;
+  }
+  .daily_wheel_bonus_spin_section,
+  .add_cash_section,
+  .referral_booster {
+    flex-wrap: wrap;
+  }
+  .daily_bonus_details_section {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+  }
+  // Daily Spin Bonus Page end
+  // Refer & Earn Page start
+  .d_flex_between {
+    flex-wrap: wrap !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .filter_details_tab_section {
+    justify-content: center;
+  }
+  .filter_inner_tab_info {
+    width: -webkit-fill-available;
+  }
+  // Refer & Earn Page End
+  // Leaderboard Page start
+  .leader_board_game_list_filter {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  // Leaderboard Page end
+
+  //Update Daily Spin Popup Start
+  .css-1jdebnw,
+  .css-1tvlp0y {
+    width: 300px !important;
+    padding: 20px !important;
+  }
+  .start-date-picker {
+    width: 100% !important;
+  }
+  //Update Daily Spin Popup End
+
+  //Offer Page Popup start
+  .css-zl8ff4 {
+    width: 300px !important;
+    .date-picker_coupon {
+      flex-wrap: wrap;
+      .end-date-picker {
+        margin-left: 0 !important;
+        .ml_1 {
+          margin-left: 0 !important;
+        }
+      }
+    }
+    .d_flex_start {
+      display: flex;
+      flex-wrap: wrap;
+      .ml_1 {
+        margin-left: 0 !important;
+      }
+    }
+  }
+  //Offer Page Popup end
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  // Tablet View
+  // Daily Spin Bonus Page start
+  .outer-box {
+    margin: 24px !important;
+  }
+  .monthly-bonus-amount {
+    width: auto !important;
+  }
+  // Daily Spin Bonus Page end
+  // Refer & Earn Page start
+  .d_flex_between {
+    flex-wrap: wrap !important;
+    display: flex !important;
+  }
+  // Refer & Earn Page End
+
+  //Edit Daily Wheel Bonus start
+  .filter_days_details_dropDown {
+    width: 100% !important;
+  }
+  .daily_wheel_bonus_section {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    .formData {
+      width: 45% !important;
+      margin-top: 0 !important;
+    }
+  }
+  .daily_wheel_bonus_input_filed {
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+  }
+  .add_daily_wheel_bonus_pop {
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+  }
+  //Edit Daily Wheel Bonus end
+  .start-date-picker {
+    width: 100% !important;
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  // Laptop View
+  // Daily Spin Bonus Page start
+  .outer-box {
+    margin: 24px !important;
+  }
+  .monthly-bonus-amount {
+    width: auto !important;
+  }
+  // Daily Spin Bonus Page end
+  // Refer & Earn Page start
+  .d_flex_between {
+    flex-wrap: wrap !important;
+    display: flex !important;
+  }
+  // Refer & Earn Page End
+
+  //Edit Daily Wheel Bonus start
+  .filter_days_details_dropDown {
+    width: 100% !important;
+  }
+  .daily_wheel_bonus_section {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    .formData {
+      width: 45% !important;
+      margin-top: 0 !important;
+    }
+  }
+  .daily_wheel_bonus_input_filed {
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+  }
+  .add_daily_wheel_bonus_pop {
+    .filter_export_details_dropDown {
+      width: 100% !important;
+    }
+  }
+  //Edit Daily Wheel Bonus end
+}
+
+// .refer_earn_section{
+//   .btn{
+//     width: 23%;
+//   }
+//   .filter_details_tab_section .filter_inner_tab_info .filter_export_date_dropdown .filter_days_details_dropDown{
+//     margin-right: 0 !important;
+//   }
+// }
+
+// .refer-earn-monthly-rank{
+//   .config-refer-section-left{
+//     margin-top: 10px;
+//     .user_kyc_section{
+//       .formData {
+//         margin-top: 0 !important;
+//       }
+//     }
+//     .center-to{
+//       margin-top: 22px;
+//     }
+//     .formData {
+//       margin-top: 0 !important;
+//     }
+//   }
+// }
+
+.refer-and-config-point-details .tab-01{
+  margin-right: 0;
+}

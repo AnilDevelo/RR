@@ -1,0 +1,184 @@
+.filter_details_tab_section{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  .filter_inner_tab_info{
+    height: 100%;
+    .filter_export_date_dropdown{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: end;
+      gap: 20px;
+      .filter_export_details_dropDown{
+        margin-right: 5px;
+        //margin-bottom: 10px;
+        @media screen and (min-width: 769px) and (max-width: 1024px){
+          margin-right: 0;
+        }
+      }
+      .filter_days_details_dropDown{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .custom_date_filter{
+        display: flex;
+        align-items: center;
+        height: 52px;
+        //margin-bottom: 10px;
+        .date-to{
+          margin-left: 5px;
+          margin-right: 5px;
+          font-weight: 600;
+          font-size: 14px;
+          font-family: "Inter", sans-serif;
+        }
+        .start-date-picker,.end-date-picker{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          border: 1px solid  #ced4da;
+          border-radius: 4px;
+          padding: 0 0 0 11px;
+          margin-left: 5px;
+          margin-right: 5px;
+          font-family: "Inter", sans-serif;
+        }
+      }
+      .search-filter-section{
+        height: 52px;
+        margin-left: 5px;
+        // margin-bottom: 10px;
+        .search-input{
+          margin-right: 0;
+        }
+        input{
+          box-sizing: border-box;
+          height: 52px;
+          padding: 0 38px 0 10px;
+          margin-right: 5px;
+          font-family: "Inter", sans-serif;
+        }
+        button{
+          height: 100%;
+          color: #97a6ba;
+          box-shadow: none;
+          margin-left: 5px;
+          border-radius: 4px;
+          background-color: rgba(151, 166, 186, 0.38);
+          font-family: "Inter", sans-serif;
+        }
+        svg{
+          cursor: pointer;
+        }
+        p{
+          position: absolute;
+          right: 12px;
+          top: 10px;
+          font-family: "Inter", sans-serif;
+        }
+      }
+    }
+  }
+  .MuiSelect-icon{
+    right: 6px !important;
+  }
+
+  .select2-container--above, .select2-container--below, span.select2.select2-container.select2-container--default{
+    min-width: 250px  !important;
+    width: auto !important;
+    margin-left: 5px;
+    margin-right: 5px;
+    @media screen and (min-width: 769px) and (max-width: 1024px){
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+  .select2-container--default .select2-selection--single{
+    height: 52px !important;
+    //margin-bottom: 10px;
+  }
+  .select2-results__options{
+    li{
+      font-size: 14px;
+    }
+  }
+
+  .select2-container--open{
+    .select2-selection--single{
+      height: 52px !important;
+      //margin-bottom: 0 !important;
+    }
+  }
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 48px !important;
+  }
+
+}
+
+.select2-container--open .select2-dropdown {
+  top: -10px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true]{
+  background-color: rgba(63, 81, 181, 0.08) !important;
+  color: black !important;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+  background: #bfbfbf33 !important;
+  color: black !important;
+}
+
+.filter_dropdown_list{
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+};
+
+.search-filter-section fieldset,
+fieldset {
+  border: none!important;
+}
+
+.input_search_field input {
+  border: 1px solid #cfd8e3;
+  border-radius: 5px;
+}
+
+
+.dropdown-content{
+  //top: 19px !important;
+  padding: 0 !important;
+  input{
+    margin: 10px 10px !important;
+    border: 1px solid lightgrey !important;
+    border-radius: 5px;
+    width: 95% !important;
+    padding-right: 30px !important;
+    &:focus{
+      outline: none !important;
+    }
+  }
+  .item-renderer{
+    display: flex !important;
+    align-items: center !important;
+    label{
+      padding: 5px 10px !important;
+    }
+    input{
+      width: auto !important;
+    }
+  }
+  ul{
+    li{
+      label{
+        padding: 5px 10px !important;
+      }
+      input{
+        width: auto !important;
+      }
+    }
+  }
+  svg{
+    margin-left: -50px !important;
+  }
+}

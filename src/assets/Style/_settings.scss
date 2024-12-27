@@ -1,0 +1,394 @@
+//--------------------------------------------------- config setting ------------------------------------------
+.config-data {
+  textarea {
+    width: 100%;
+    border: 1px solid #cfd8e3;
+    border-radius: 5px;
+    padding: 9px;
+    font-family: "Inter", sans-serif !important;
+    &:focus{
+      outline: 1px solid #0277bd !important;
+    }
+  }
+};
+
+//-------------------------------------------------- flag config page -------------------------------------------
+.flag_config{
+  //margin: 32px 40px;
+  .main_setting_block .switch_box .switch input:checked+.slider:before {
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  .main_setting_block {
+    width: calc(100% - 25rem);
+    position: relative;
+    margin: 20px 0;
+    .main_switch_block{
+      display: flex;
+      justify-content: space-between;
+    }
+    h4 {
+      margin: 0;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #25282C;
+    }
+    h5{
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      width: 100%;
+    }
+    button.save_btn {
+      max-width: 84px;
+      width: 100%;
+      background: #C00C2D;
+      border-radius: 20px;
+      padding: 10px;
+      border: none;
+      font-family: montserrat_bold;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      border: 1px solid #C00C2D;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      &:hover {
+        background-color: transparent;
+        color: #C00C2D;
+      }
+    }
+
+    .switch_box {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: calc(100% - 84px);
+
+      .switch input {
+        opacity: 0;
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        height: 20px;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        cursor: pointer;
+      }
+
+      .switch {
+        display: inline-block;
+        max-width: 42px;
+        width: 100%;
+        position: relative;
+      }
+
+      .slider {
+        max-width: 42px;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        border-radius: 20px;
+        background: #457B9D;
+        cursor: pointer;
+        border: 4px solid transparent;
+        overflow: visible;
+        transition: 0.4s;
+        z-index: 1;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 26px;
+        background: #FFFFFF;
+        border-radius: 100px;
+        top: -8px;
+        left: -6px;
+        -webkit-transform: translateX(-0px);
+        transform: translateX(-0px);
+        -webkit-transition: .4s;
+        transition: .4s;
+        -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .switch input:checked+.slider:before {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+      }
+
+      .off,
+      .on {
+        color: #959595;
+        margin: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: right;
+        letter-spacing: 0.6px;
+        text-transform: capitalize;
+      }
+
+      .off {
+        padding-right: 12px;
+      }
+
+      .on {
+        padding-left: 12px;
+      }
+
+      .off.checked,
+      .on.checked {
+        color: black;
+      }
+
+      input[type="checkbox"]:disabled~span.slider {
+        background: rgb(69 124 158 / 50%);
+      }
+    }
+
+  }
+  .game-play-rules{
+    text-align: left;
+    button{
+      width: 20%;
+    }
+  }
+};
+
+//--------------------------------------------------- restrictGeo page -----------------------------------------
+.restrictGeo-section{
+  .restrictGeo_details{
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    @media screen and (max-width: 957px) {
+      flex-wrap: wrap;
+      justify-content: unset;
+    }
+    .formData {
+      width: 454px;
+      .multi-select,.dropdown-container{
+        border: none !important;
+      }
+      .excel_export_selected_value .inner_content {
+        width: 100%;
+        top: -29px;
+        .file_menu {
+          border-radius: 6px;
+          li {
+            height: 48px !important;
+          }
+        }
+      }
+      .dropdown_value_details {
+        width: 100%;
+        margin: 5px 0 0;
+      }
+      .dropdown-heading{
+        margin-top: 5px;
+        position: relative;
+        display: flex;
+        min-height: 48px;
+        border-radius: 4px;
+        padding: 0 16px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        background-color: white;
+        border: 1px solid #cfd8e3 !important;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        color: #64748b;
+      }
+    }
+
+    .restrict_geo_btn{
+      margin-top: 10px;
+      button{
+        background-color: #0277BD;
+        padding: 0 16px;
+        min-width: 64px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+        height: 48px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .select2-container--default .select2-selection--single{
+      height: 48px !important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+      line-height: 46px !important;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+      right: 9px !important;
+    }
+    .emailWrap{
+      margin-top: 5px !important;
+    }
+  }
+
+}
+
+//--------------------------------------------------- Notification ---------------------------------------------
+.notification_popup{
+  .add_admin_user_popup_content.coupon_section_form{
+    max-height: 83vh;
+  }
+  .ml{
+    margin-left: 10px;
+  }
+  .mr{
+    margin-right: 10px;
+  }
+
+  .filter_export_details_dropDown{
+    margin-top: 7px;
+    li{
+      text-transform: capitalize !important;
+    }
+  }
+  .start-date-picker{
+    margin-right: 0 !important;
+    .datePicker_details{
+      width: 100%;
+    }
+  }
+
+}
+.filter_dropdown_list {
+  text-transform: capitalize
+}
+
+.country_display_popup{
+  .modal_popup_title{
+    padding: 32px 32px 15px;
+  }
+  .country_availability_details{
+    max-height: 70vh;
+    overflow: auto;
+    padding: 0 30px 30px;
+    .country_availability_details_info{
+      margin-bottom: 8px;
+    }
+  }
+}
+
+//
+
+.maintenance_module_section{
+  .date-picker_coupon{
+    display: flex;
+    .start-date-picker{
+      margin-right: 5px;
+    }
+    .end-date-picker{
+      margin-left: 5px;
+    }
+    .start-date-picker,.end-date-picker{
+      .date_picker_value{
+        border: 1px solid #cfd8e3;
+        border-radius: 4px;
+        margin-top: 5px;
+        input{
+          margin: 0;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+.restrict_geo_section_dropdown{
+  margin-top: 5px;
+}
+
+.restrict_geo_section .select2-container--default .select2-selection--single{
+  border: 1px solid #cfd8e3 !important;
+}
+.turnOff_btn{
+  span.slider{
+    background-color: #000 !important;
+    opacity: 0.38;
+  }
+}
+// //////////////////////////////////// Responsive Page ////////////////////
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  // Mobile View
+  //Flag Config start
+  .main_setting_block {
+    width: 100% !important;
+  }
+  .game-play-rules {
+    button {
+      width: 100% !important;
+    }
+  }
+  .main_switch_block {
+    .switch_box {
+      justify-content: flex-end;
+    }
+  }
+  //Flag Config End
+  .css-3xoay7{
+    width: 300px !important;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  // Tablet View
+
+  //Flag Config start
+  .main_setting_block {
+    width: 100% !important;
+  }
+  .game-play-rules {
+    button {
+      width: 100% !important;
+    }
+  }
+  .main_switch_block {
+    .switch_box {
+      justify-content: flex-end;
+    }
+  }
+  //Flag Config End
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  // Laptop View
+
+  //Flag Config start
+  .main_setting_block {
+    width: 100% !important;
+  }
+  .main_switch_block {
+    .switch_box {
+      justify-content: flex-end;
+    }
+  }
+  //Flag Config End
+}
+
+
+.turnOff_btn{
+  span.slider{
+    background-color: #000 !important;
+    opacity: 0.38;
+  }
+}

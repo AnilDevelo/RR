@@ -1,0 +1,351 @@
+.header_slider_section{
+  table{
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+
+    th,td{
+      border-bottom: 1px solid #cfd8dc;
+      padding: 5px 0;
+    }
+    th{
+      border-bottom: 1px solid #cfd8dc;
+      padding: 9px 10px 10px 24px;
+      min-width: 150px;
+      text-align: left;
+      letter-spacing: 0.01071em;
+      display: table-cell;
+      vertical-align: inherit;
+      color: #64748b;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+      line-height: 30px;
+      text-transform: capitalize !important;
+    }
+    td{
+      padding: 9px 10px 10px 24px;
+      border-bottom: 1px solid #cfd8dc;
+      white-space: nowrap;
+      font-size: 14px;
+      color: #27303f;
+      line-height: 30px;
+      vertical-align: middle;
+    }
+  }
+  .drag_and_drop_td{
+    img{
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+
+}
+
+.header_slider_details .user_profile_pic {
+  border: none;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+
+.header_slider_details{
+  .header_section_slider{
+    border: 1px dashed  #cfd8e3 !important;
+    border-radius: 4px;
+    margin-top: 10px;
+
+  }
+  .profile{
+    padding: 0;
+  }
+  .user_profile{
+    text-align: left;
+  }
+  .user_profile_pic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: none ;
+    img{
+      width: 684px;
+      height: 360px;
+      display: block;
+      object-fit: cover;
+      border-radius: unset;
+    }
+    .add_new{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      input[type=file] {
+        cursor: pointer;
+        font-size: 0;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+  label{
+    font-weight: 500;
+  }
+}
+
+.website_slider_img{
+  img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+.btn-replace{
+  background: #1d1f2b;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-cancel{
+  background: red;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-yellow{
+  background: #1976d2;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.website_btn{
+  button{
+    border: none;
+    background: #1976d2;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .btn_up{
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+}
+
+.game_icon_img{
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+
+.game_details_slider{
+  height: 80vh;
+  overflow: auto;
+}
+.text_add {
+  display: flex;
+  align-items: center;
+  .input-field-feature{
+    width: 630px;
+  }
+  .input-field-featureValue{
+    width: 676px;
+  }
+
+  span.cursor_pointer.remove_field ,.add_field{
+    margin-left: 10px;
+    font-weight: 600;
+    letter-spacing: .9px;
+    line-height: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  .add_field{
+    background: #1d1f2b;
+  }
+  span.cursor_pointer.remove_field{
+    background: #c00c2d;
+  }
+}
+
+.add_admin_user_popup_content form{
+  .game_display_form.winner_content_form{
+    .profile {
+      width: auto;
+      padding-right:0;
+
+    }
+    .user_profile{
+      position: relative;
+      width: 100px;
+      .user_profile_pic{
+        position: relative;
+        margin-bottom: 10px;
+        img{
+          object-fit: cover;
+          border: none;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+        .addnew{
+          bottom: 4px;
+          height: 30px;
+          position: absolute;
+          right: -4px;
+          width: 30px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          input[type="file"] {
+            cursor: pointer;
+            font-size: 0;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            padding-left: 26px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.header_slider_section{
+  table{
+    width: 100%;
+    background: transparent;
+    border-collapse: collapse;
+
+    th,td{
+      border-bottom: 1px solid #cfd8dc;
+      padding: 5px 0;
+    }
+    th{
+      border-bottom: 1px solid #cfd8dc;
+      padding: 9px 10px 10px 24px;
+      min-width: 150px;
+      text-align: left;
+      letter-spacing: 0.01071em;
+      display: table-cell;
+      vertical-align: inherit;
+      color: #64748b;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+      line-height: 30px;
+      text-transform: capitalize !important;
+    }
+    td{
+      padding: 9px 10px 10px 24px;
+      border-bottom: 1px solid #cfd8dc;
+      white-space: nowrap;
+      font-size: 14px;
+      color: #27303f;
+      line-height: 30px;
+      vertical-align: middle;
+    }
+  }
+  .drag_and_drop_td{
+    img{
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+
+}
+
+.winner_profile_img{
+  img{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+.game_flex{
+  .add_winner_details_form{
+    display: flex;
+    align-items: center;
+    .formData_field{
+      width: 100%;
+    }
+    .formData_fieldTab01{
+      margin-right: 10px;
+    }
+    .formData_fieldTab02{
+      margin-left: 10px;
+    }
+  }
+}
+.social_media_section{
+  .profile{
+    .user_profile{
+      .user_profile_pic{
+        img{
+          width: 200px !important;
+          height: 110px !important;
+          border-radius: 0 !important;
+        }
+        .addnew{
+          bottom: -6px !important;
+          right: -8px !important;
+          img{
+            width: 25px !important;
+            height: 25px !important;
+          }
+        }
+      }
+    }
+  }
+
+}
+.social_profile_img{
+  img{
+    width: 44px;
+    height: 44px;
+  }
+}
+.winner_section{
+  display: flex;
+  justify-content: space-between !important;
+  h2{
+    font-weight: bold;
+    font-size: 19px;
+    font-family: "Inter", sans-serif !important;
+  }
+}

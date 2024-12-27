@@ -1,0 +1,265 @@
+.overall_revenue{
+  .earning_report{
+    .filter_details_tab_section.analytics_filter{
+      margin: 0 0 10px;
+    }
+  }
+  .overall_revenue_outerBox{
+    @extend .d_flex;
+    align-items: center;
+  }
+  .devider{
+    color: lightgrey;
+    font-size: 34px;
+  }
+  &_box{
+    border: 1px solid lightgray;
+    margin: 0 10px 0 ;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 4px;
+    position: relative;
+    &_img{
+      position: absolute;
+      right: 8px;
+      top: 8px;
+      img{
+        width: 21px;
+        height: 21px;
+        cursor: pointer;
+      }
+    }
+    h4{
+      color: #444343;
+      font-size: 15px;
+      letter-spacing: normal;
+      text-transform: capitalize;
+      text-align: left;
+      line-height: 17px;
+      font-family: "Inter", sans-serif !important;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #3c98cf;
+      font-weight: 500;
+      font-family: "Inter", sans-serif !important;
+      font-size: 19px;
+    }
+  }
+}
+.Total_Game_Revenue{
+  align-items: center;
+  h4{
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  //Game Wise Revenue Page Start
+  .tds_report_all_game {
+    display: unset !important;
+    .outer-box {
+      width: auto !important;
+    }
+  }
+  //Game Wise Revenue Page End
+
+  //Game Wise Revenue Page Start
+  .filter_export_date_dropdown {
+    margin-top: 10px;
+  }
+  .tds_report_all_game {
+    .outer-box {
+      margin: 10px !important;
+    }
+  }
+  //Game Wise Revenue Page End
+
+  //Overall Revenue Page Start
+  .overall_revenue_outerBox {
+    flex-wrap: wrap;
+  }
+  .overall_revenue_box {
+    margin: 10px 0 !important;
+  }
+  //Overall Revenue Page End
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  //Game Wise Revenue Page Start
+  .filter_export_date_dropdown {
+    margin-top: 10px;
+  }
+  .tds_report_all_game {
+    .outer-box {
+      margin: 10px !important;
+    }
+  }
+  //Game Wise Revenue Page End
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  //Game Wise Revenue Page Start
+  .filter_export_date_dropdown {
+    //flex-wrap: unset !important;
+    margin-top: 10px;
+  }
+  .tds_report_all_game {
+    .outer-box {
+      margin: 10px !important;
+    }
+  }
+  //Game Wise Revenue Page End
+
+  //Overall Revenue Page Start
+  .overall_revenue_outerBox {
+    display: block !important;
+  }
+
+  .overall_revenue_box {
+    margin: 10px !important;
+  }
+  //Overall Revenue Page End
+}
+
+.refer_earn_share_config{
+  textarea{
+    border-radius: 5px !important;
+    margin-top: 5px !important;
+    width: 100%;
+    padding: 10px;
+  }
+
+}
+
+.totalMGPWallets{
+  display: flex;
+  .filter_details_tab_section.analytics_filter.mr_2{
+    margin: 0;
+  }
+  h3{
+    //color: #444343;
+    font-size: 20px;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    text-align: left;
+    font-family: "Inter", sans-serif !important;
+  }
+p{
+  color: #0277BD;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif !important;
+  margin-left: 10px;
+}
+}
+
+.border_bottom_platform{
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 30px;
+}
+
+.mt_margin_platform{
+  padding-top: 30px;
+}
+
+.platform-distribution-box{
+  display: flex;
+  h2{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: initial;
+    font-weight: 700;
+    color: #464646;
+  }
+  .box{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 32%;
+    .inner_box{
+      border: 1px solid lightgray;
+      width: 100%;
+      padding: 15px;
+      border-radius: 4px;
+      background: #fafafa;
+      margin-top: 10px;
+      p{
+        font-family: "Inter", sans-serif !important;
+        font-size: 14px;
+        //color: #767272;
+        font-weight: 500;
+        margin-bottom: 3px;
+      }
+      .inner_box_outer{
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+        .innerBox_text{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 3px;
+          p{
+            font-family: "Inter", sans-serif !important;
+            color: #565656;
+          }
+        }
+      }
+      .total_box_count{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        .title{
+          color: #3f3f3f;
+          font-size: 16px;
+        }
+        .amount{
+          color: #3c98cf;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.platform_section{
+  //display: flex;
+  //align-items: baseline;
+  //.totalMGPWallets{
+  //  width: 25%;
+  //}
+  // p{
+  //   font-family: "Inter", sans-serif !important;
+  //   font-weight: 600;
+  // }
+  .d_flex_end{
+    width: 100%;
+  }
+  .filter_details_tab_section.analytics_filter{
+    margin: 0;
+  }
+}
+
+.tooltip_details_revenue{
+  h5,p{
+    font-family: "Inter", sans-serif !important;
+    color: white;
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.css-mz4e27-MuiPopper-root-MuiTooltip-popper .MuiTooltip-tooltip{
+  padding: 10px;
+}
+
+.game-rules-section{
+  position: relative;
+}
+
+.link_transaction_history{
+  margin-right: 10px;
+  font-weight:bold;
+  font-size: 12px;
+  color: #3c98cf;
+  border-bottom: 1px solid #3c98cf;
+}
+
+.justify_space{
+  justify-content: space-between;
+}

@@ -1,0 +1,115 @@
+*,
+:after,
+:before {
+  @include boxSizing(border-box);
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  @extend .d_block;
+}
+
+body,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+input,
+li,
+ol,
+p,
+span,
+table,
+tbody,
+td,
+textarea,
+th,
+thead,
+tr,
+ul,
+select {
+  word-wrap: break-word;
+  outline: 0;
+  @extend .m_0;
+  @extend .p_0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+textarea {
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+};
+
+input[type='radio']{
+  cursor: pointer;
+  height: 16px;
+};
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  @include appearance(none);
+  @extend .cursor_pointer;
+}
+
+a,
+button,
+[type="submit"],
+[type="button"] {
+  @include transition(all 0.3s ease-in-out);
+}
+
+input {
+  box-shadow: none !important;
+}
+
+
+input:not([type="radio"], [type="checkbox"]) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif ;
+  @include appearance(none);
+}
+
+
+input.form_control:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #1784E9 !important;
+  &:hover{
+    border: 1px solid #1784E9 !important;
+  }
+}
+
+dir,
+menu,
+ul {
+  @extend .m_0;
+  @extend .p_0;
+  @extend .d_block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}

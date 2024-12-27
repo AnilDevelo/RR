@@ -1,0 +1,35 @@
+.turnament_internal {
+  margin-top: 10px;
+  padding: 0 32px 32px 32px;
+  height: 79vh;
+  overflow: auto;
+}
+
+.tournament_second_row,
+.tournament_threed_row,
+.tournament_fourth_row,
+.tournament_five_row {
+  display: flex;
+  gap: 20px;
+}
+
+.multiple_winner,
+.multiple_winner_row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.game_mode_btn_option {
+  svg {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+.tournament_threed_row{
+    svg {
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+      }       
+}

@@ -1,0 +1,262 @@
+.report_analytics_details {
+  overflow: hidden;
+  width: 100%;
+  max-width: calc(100% - 40px);
+  margin: 30px auto;
+  .report_analytics {
+    display: flex;
+    margin-bottom: 20px;
+    .left_side_analytics,
+    .right_side_analytics {
+      padding: 20px;
+      border-radius: 6px;
+    }
+    .left_side_analytics {
+      width: 100% !important;
+      margin-right: 5px;
+      background: white;
+    }
+    .right_side_analytics {
+      width: 100% !important;
+      margin-left: 5px;
+      background: white;
+    }
+    .chart-title-data {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+      p {
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 700;
+        color: rgb(55, 61, 63);
+        font-family: "Inter", sans-serif !important;
+      }
+    }
+    .chart-details-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h2 {
+        font-size: 15px !important;
+        line-height: 24px;
+        font-weight: 700 !important;
+        color: rgb(55, 61, 63) !important;
+        margin-left: 20px;
+        font-family: "Inter", sans-serif !important;
+      }
+      .chart_info {
+        p {
+          color: black;
+          font-size: 12px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          font-family: "Inter", sans-serif !important;
+        }
+      }
+    }
+    .chart_details {
+    }
+  }
+}
+
+.filter_details_tab_section.analytics_filter {
+  margin-top: 32px;
+  .start-date-picker,
+  .end-date-picker {
+    background: white;
+  }
+}
+
+.disabled {
+  color: lightgray !important;
+  .dot {
+    background: lightgray !important;
+  }
+}
+
+.apexcharts-tooltip-title,
+span.apexcharts-tooltip-text-y-label,
+span.apexcharts-tooltip-text-y-value,
+.apexcharts-text.apexcharts-xaxis-title-text,
+.apexcharts-legend-text,
+#SvgjsTspan2798 {
+  font-family: "Inter", sans-serif !important;
+}
+
+.apexcharts-yaxis-label tspan {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+.game_tab_overView {
+  &_title {
+    h2 {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 21px;
+      font-family: "Inter", sans-serif !important;
+    }
+    p {
+      font-family: "Inter", sans-serif !important;
+      font-size: 14px;
+    }
+  }
+  &_content {
+    @extend .d_flex_between;
+    margin-top: 20px;
+    .game_tab_details_box {
+      display: flex;
+      align-items: center;
+      img{
+        margin-left: 10px;
+        width: 21px;
+        height: 21px;
+      }
+    }
+    .game_tab_details {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 15px;
+        font-weight: 700;
+      }
+      p {
+        color: #8e8c8c;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0;
+        line-height: 32px;
+        text-align: center;
+        padding-top: 9px;
+      }
+    }
+  }
+}
+tspan{
+  font-family: Inter, sans-serif !important;
+}
+
+.overall_revenue_outerBox.profit_box_platform{
+  .overall_revenue_box{
+    display: flex;
+    align-items: center;
+    h4{
+      font-size: 23px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .mr_2 {
+    margin-right: 0;
+  }
+  .report_analytics {
+    flex-wrap: wrap;
+  }
+  .left_side_analytics {
+    margin: 10px 0 !important;
+  }
+  .right_side_analytics {
+    margin: 10px 0 !important;
+  }
+  .report_analytics {
+    margin: 0 !important;
+  }
+  .outer-box {
+    padding: 10px;
+  }
+  .game_tab_overView_title {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .game_tab_overView_content {
+    flex-wrap: wrap;
+  }
+  .d_flex_between {
+    display: unset;
+    text-align: center;
+  }
+  .filter_details_tab_section.analytics_filter {
+    .custom_date_filter {
+      justify-content: space-between;
+      width: 100% !important;
+      .start-date-picker {
+        width: 100% !important;
+      }
+      .end-date-picker {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .d_flex_between {
+    display: unset;
+    text-align: center;
+  }
+  .filter_export_date_dropdown {
+    width: 100%;
+    .filter_days_details_dropDown {
+      width: 100%;
+    }
+  }
+  .filter_details_tab_section.analytics_filter {
+    .custom_date_filter {
+      justify-content: space-between;
+      width: 100% !important;
+      .start-date-picker {
+        width: 100% !important;
+      }
+      .end-date-picker {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .d_flex_between {
+    display: unset;
+    text-align: center;
+  }
+  .filter_export_date_dropdown {
+    width: 100%;
+    .filter_days_details_dropDown {
+      width: 100%;
+    }
+  }
+  .game_tab_overView_content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .custom_date_filter {
+    width: 100%;
+  }
+  .start-date-picker {
+    width: 100%;
+  }
+  .end-date-picker {
+    width: 100%;
+  }
+}
+.game_tab_details_box {
+  display: flex;
+  align-items: center;
+  img{
+    margin-left: 10px;
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.game_build_details{
+  .game_mode_btn{
+    margin-top: 0;
+  }
+}

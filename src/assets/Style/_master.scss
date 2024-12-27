@@ -1,0 +1,549 @@
+
+.genre_popup_details{
+  .checkbox_modal{
+    .game_mode_btn{
+      display: flex;
+      align-items: center;
+      .game_mode_btn_option{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        input{
+          width: 16px;
+          height: 16px ;
+          margin-right: 5px;
+          margin-bottom: 0;
+          margin-top: 0;
+        }
+      }
+      .tab_radio{
+        margin-left: 10px;
+      }
+    }
+  }
+  .genre-checkbox{
+    .game_mode_btn{
+      display: block;
+      .tab_radio{
+        margin-left: 0;
+      }
+    }
+  }
+  .common_checkbox_details .game_mode_btn {
+    display: flex;
+    margin-top: 4px;
+  }
+  input[type='checkbox']{
+    box-shadow: none !important;
+    min-height: auto !important;
+    cursor: pointer;
+  }
+};
+
+
+.header_slider_details_Ads{
+  .user_profile{
+    margin-bottom: 10px;
+    .user_profile_pic {
+      img {
+        width: 100%;
+        height: 100px;
+      }
+    }
+  }
+
+  .date-picker_coupon {
+    display: flex;
+    //align-items: center;
+    justify-content: space-between;
+  }
+  .date_picker_value{
+    border-radius: 6px;
+    padding: 0  0 0 10px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border: 1px solid #cfd8e3;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    .MuiInputBase-formControl{
+      height: 48px !important;
+    }
+  }
+  .start-date-picker,.end-date-picker{
+    width: 100%;
+  }
+  .start-date-picker{
+    margin-right: 10px;
+  }
+  .end-date-picker{margin-left: 10px  ;}
+}
+
+.lobby_section_details{
+  .lobby-type-description{
+    position: relative;
+    input{
+      padding-right: 62px;
+    }
+    span{
+      position: absolute;
+      top: 14px;
+      right: 10px;
+      color: darkgray;
+
+    }
+  }
+  .profile .user_profile_pic img{
+    border-radius: 0;
+  }
+}
+
+.game-mode-config-design{
+  .formData{
+    margin-bottom: 5px;
+  }
+}
+
+.bot_section_details{
+  .profile .user_profile_pic img{
+    border-radius: 0;
+  }
+}
+
+.ag_gameSection{
+  padding: 10px 0;
+  .ag_main{
+    .slick-slider{
+      @include Slickbtn;
+      .slick-prev{
+        left: -17px !important;
+        &::before{
+          display: none;
+        }
+      }
+      img{
+        padding: 0 10px;
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .slick-next {
+        right: -17px !important;
+      }
+    }
+
+  }
+  .ag_gameDescription{
+    padding-top: 40px;
+    .ag_content{
+
+      max-width: 1110px;
+      width: 100%;
+    }
+    .ag_desc{
+      width: 100%;
+      p{
+        font-size: 14px;
+        line-height: 21px;
+        color: #423A70;
+        letter-spacing: 0;
+      }
+    }
+    .ag_feature{
+      .ag_header{
+        margin-top: 30px;
+        h3{
+          margin-bottom: 25px;
+          font-size: 20px;
+          line-height: 21px;
+          color: #150D42;
+          letter-spacing: 0;
+          font-weight: bold;
+        }
+      }
+    }
+    .ag_featureList{
+      ul{
+        li{
+          margin-bottom: 10px;
+          position: relative;
+          div{
+            font-size: 14px;
+            line-height: 24px;
+            color: #423A70;
+            letter-spacing: 0;
+            padding-left: 24px;
+            &::after{
+              content: url('../images/leaves.png');
+              position: absolute;
+              width: 13px;
+              height: 14px;
+              top:2px;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .ag_mainTab{
+      padding-left: 70px;
+      //@include mediaQuery(1560px){
+      //  padding-top: 30px;
+      //  padding-left: 0;
+      //}
+      .ag_tabSidebar {
+        .apple_btn{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.ag_gameSlick{
+  padding: 0 20px;
+}
+
+.user_notification_type{
+  .dropdown-content{
+    .item-renderer{
+      input{
+        min-height: auto !important;
+        height: auto !important;
+      }
+    }
+  }
+  .inactive-user-details{
+    display: flex;
+  }
+  .mt{
+    margin-top: 7px;
+  }
+  .ml{
+    margin-left: 10px;
+  }
+  .mr{
+    margin-right: 10px;
+  }
+  .offer-details-section form{
+    overflow: initial;
+  }
+  .dropdown-mt{
+    margin-top: 7px;
+  }
+  .lobby_label_testing{
+    .game_dropdown{
+      height: 48px;
+      width: 297px;
+      .dropdown-container{
+        height: 100%;
+        .dropdown-heading{
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.notification_logo_filed{
+  display: flex;
+  .add_admin_user_popup{
+    width: 100%;
+    //margin-right: 30px;
+  }
+  .form_group.profile.new_game_section.profile-image-dropdown{
+    width: 35%;
+    .user_profile_pic{
+      margin-top: 10px;
+      img{
+        border-radius: 0 !important;
+      }
+    }
+  }
+}
+
+button.disabled_btn_game_Splash.loader_css{
+  line-height: 1.3rem;
+  @extend .text_center;
+  @extend .border_0;
+  border-radius: 3px;
+  @extend .cursor_pointer;
+  font-family: Inter,sans-serif ;
+  padding: 0.625rem 1.938rem;
+  @include transition(all .3s ease-in-out);
+  font-weight: 600;
+  background: #ebebeb !important;
+  color: gray !important;
+  font-weight: 600;
+  font-size: 14px !important;
+  cursor: not-allowed !important;
+}
+
+.game-mode-config-design{
+  .lobby-type-description{
+    span{
+      top: 19px !important;
+    }
+  }
+}
+
+
+.policy_details{
+  .ql-editor{
+    max-height: 104px;
+    min-height: 450px;
+    overflow: auto;
+  }
+}
+.userType_notification{
+  width: 100% !important;
+}
+
+
+.MuiMenu-paper.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1qz17ui-MuiPaper-root{
+  max-width: 637px !important;
+  // min-width:auto !important;
+  li{
+    white-space: pre-line;
+  }
+}
+/* Apply styles only in Safari */
+@media not all and (min-resolution: 0.001dpcm) { 
+  @supports (-webkit-appearance: none) {
+    .MuiMenu-paper.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1qz17ui-MuiPaper-root {
+      top: 487px !important;
+    }
+  }
+}
+
+
+// //////////////////////////////////// Responsive Page ////////////////////
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  // Mobile View
+  //Splash Screen start
+  .d_flex_between {
+    text-align: left !important;
+    display: unset !important;
+  }
+  //Splash Screen start
+
+  //Lobby Type start
+  .css-yc69xr {
+    width: 300px !important;
+    height: 400px !important;
+    overflow: scroll;
+  }
+  //Lobby Type end
+
+  //Notification Page start
+  .css-1miw8tc {
+    width: 300px !important;
+    height: 400px !important;
+    overflow: scroll;
+    .profile {
+      display: unset !important;
+    }
+  }
+  //Notification Page end
+
+  //Game Category start
+  .css-g69k3t {
+    width: 300px !important;
+  }
+  //Game Category end
+
+  //Documentation > Delete Account
+  .css-xyuqu0 {
+    width: 300px !important;
+    .game_display_form {
+      display: unset !important;
+    }
+  }
+  //Documentation > Delete Account
+}
+.css-1miw8tc {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
+    .emailWrap {
+      .filter_export_details_dropDown {
+        width: 100% !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  // Teblet View
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  // Laptop View
+}
+
+.ql-formats button,
+.ql-size,
+.ql-picker {
+  position: relative;
+
+  /** Set a tooltip with css pseudo-elements, when buttons are hover, active or focus  */
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    background: #000000;
+    color: white;
+    padding: 0.5em;
+    border-radius: 5px;
+    top: -120%;
+    left: -10px;
+    z-index: 999999;
+    position: absolute;
+    font-size: 12px;
+    font-family: "Inter", sans-serif !important;
+  }
+}
+/** Set tooltip content for bold button **/
+.ql-bold {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Bold";
+  }
+}
+.ql-color {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Text Color";
+  }
+}
+.ql-background {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Background Color";
+  }
+}
+.ql-align {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Text alignment";
+  }
+}
+.ql-clean {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Clear";
+  }
+}
+.ql-script {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Script Tag";
+  }
+}
+.ql-header {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Heading Tag";
+  }
+}
+.ql-image {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Select image";
+  }
+}
+.ql-font {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Font";
+  }
+}
+
+.ql-code-block {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Code-block";
+  }
+}
+.ql-indent {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Indent";
+  }
+}
+
+.ql-direction {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Direction";
+  }
+}
+
+.ql-size {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Size";
+  }
+}
+
+.ql-italic {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Italic";
+  }
+}
+
+.ql-underline {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Underline";
+  }
+}
+.ql-strike {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Strikeout";
+  }
+}
+.ql-link {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Hyperlink";
+  }
+}
+.ql-blockquote {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Quote";
+  }
+}
+.ql-list[value="bullet"] {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Bulleted List";
+    top: -200%;
+  }
+}
+.ql-list[value="ordered"] {
+  &:hover::after,
+  &:active::after,
+  &:focus::after {
+    content: "Numbered List";
+    top: -200%;
+  }
+}

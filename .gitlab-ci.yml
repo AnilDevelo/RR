@@ -1,0 +1,22 @@
+stages:
+  - deploy
+
+deploy_development:
+  stage: deploy
+  tags:
+    - new-dev-server
+  environment:
+    name: development
+    url: https://mgp.artoon.in
+  before_script:
+    - eval export PATH=/root/.nvm/versions/node/v14.17.3/bin:${PATH}
+  script:
+    - npm install --cache
+    - pwd
+    - cp /var/www/html/dev/mgp-super-admin/.env .
+    - CI= npm run-script build
+    - cp -r build/* /var/www/html/dev/mgp-super-admin/build_live/
+    - cp /var/www/html/htaccess /var/www/html/dev/mgp-super-admin/build_live/.htaccess
+  when: manual
+  only:
+    - development 

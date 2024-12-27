@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="46px" viewBox="0 0 37 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Verify-SDK---Step-1" transform="translate(-902.000000, -433.000000)" stroke="#C81E1E" stroke-width="3.5">
+            <g id="card" transform="translate(340.000000, 212.000000)">
+                <g id="selection-card" transform="translate(540.000000, 204.000000)">
+                    <g id="arrow-down" transform="translate(24.000000, 19.000000)">
+                        <path d="M16.3321667,42 L16.3321667,0" id="Path"></path>
+                        <polyline id="Path" points="-1.24344979e-13 25.6666667 16.3333333 42 32.6666667 25.6666667"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

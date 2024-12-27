@@ -1,0 +1,495 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  &:focus{
+    outline: none !important;
+  }
+}
+.public-DraftStyleDefault-block {
+  margin: 0!important;
+}
+
+.formData{
+  margin-top: 10px;
+  input{
+    border: 1px solid #cfd8e3;
+    height: 48px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 16px;
+    color: #000;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-family: "Inter", sans-serif ;
+    margin-top: 5px;
+    &:focus{
+      outline: 1px solid #2977bd;
+    }
+  }
+};
+
+.outer-box {
+  margin: 32px 40px;
+  padding: 30px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  color: transparent ;
+  background: $white;
+  border-radius: 4px;
+  h2{
+    font-size: 20px;
+    font-family: "Inter", sans-serif ;
+    letter-spacing: initial;
+    font-weight: 700;
+  }
+};
+
+.tab{
+  .tab_inner_section{
+    padding-left: 0;
+  }
+  .tab_bg_white{
+    background: $white;
+    padding: 0 32px;
+  }
+  .tab_listing{
+    font-size: 14px;
+    font-family: Inter,sans-serif ;
+    font-weight: 600;
+    letter-spacing: .02857em;
+    max-width: 360px;
+    line-height: 1.25;
+    min-height: 48px;
+    min-width: 90px;
+    padding: 12px 16px;
+    position: relative;
+    color: rgba(0,0,0,.6);
+    text-transform: capitalize;
+  };
+};
+label {color: #27303f ;font-weight: 500 ;font-size: 14px ;line-height: 18px;   font-family: Inter,sans-serif;}
+
+.role_field_id{
+  .u_border{
+    border-right: 1px solid lightgrey;
+    padding: 0 14px 0 0;
+    margin: 0;
+  }
+  .prTab{
+    padding-left: 14px;
+  }
+  .active_border{
+    margin: 0;
+  }
+};
+
+
+
+.profile-image-dropdown {
+  position: relative;
+  .close-icon{
+    position: absolute;
+    top: -7px;
+    left: 85px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 88;
+    background: #de2b2b;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      width: 89%;
+      height: 89%;
+    }
+    image{
+      width: 100%;
+      height: 100%;
+    }
+  }
+};
+
+
+.select-mode-img{
+  display: flex;
+  align-items: center;
+}
+
+
+.select_game_option .MuiFormControl-root, .select_label .MuiFormControl-root {
+  width: 100%;
+}
+
+
+.activeAddGame{
+  background-color: rgba(63, 81, 181, 0.08);
+}
+.activePlatformIcon{
+  svg{
+    color: #0277BD !important;
+  }
+}
+
+.select-dropdown-main{
+  .select_multiple_menu {
+    img{
+      display: none;
+    }
+    h2{
+      font-size: 13px !important;
+    }
+    p{
+      display: none !important;
+    }
+  }
+  .MuiSelect-select.MuiSelect-select{
+    height: 46px !important;
+    padding: 0 16px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-transform: capitalize;
+  }
+}
+
+.select_multiple_menu {
+  img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  h2{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    font-family: "Inter", sans-serif !important;
+  }
+  p{
+    display: block;
+    font-size: 13px;
+    margin-top: 5px;
+    font-family: "Inter", sans-serif !important;
+  }
+};
+
+.common_checkbox_details{
+  width: 100%;
+  .game_mode_btn{
+    display: flex;
+    margin-top: 10px;
+    .yes_radio_btn{
+      margin-right: 10px;
+    }
+    .no_radio_btn{
+      margin-left: 10px;
+    }
+    .game_mode_btn_option{
+      display: flex;
+      align-items: center;
+      input[type='radio']{
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        min-height: auto;
+      };
+    }
+  }
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: red;
+  margin-left: 5px;
+}
+
+.dot.dot_blue {
+  background: rgb(0, 143, 251) !important;
+}
+
+.dot.dot_orange {
+  background: rgb(255, 69, 96) !important;
+}
+
+.dot.dot_yellow {
+  background: rgb(254, 176, 25) !important;
+}
+
+.dot.dot_green {
+  background: rgb(0, 227, 150) !important;
+}
+
+ul.MuiList-root.MuiList-padding.MuiMenu-list.css-h4y409-MuiList-root {
+  max-height: 300px;
+}
+
+.manage_game_builds_details_field .text-editor-details-section .editor-content-details,
+.user_kyc_section_filed .text-editor-details-section .editor-content-details {
+  max-height: 150px;
+  min-height: 90px;
+  padding: 5px;
+}
+
+.game_release_section_modal .country-user-details .select_game_release .dropdown-container,
+.game_release_section_modal .country-user-details .select_game_release .dropdown-heading{
+  height: 100%;
+}
+
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root, .css-dplwbx-MuiPickersCalendarHeader-label{
+  font-family: Inter, sans-serif !important;
+}
+
+.css-1cft6hy-MuiSlider-track, .css-ebcf4f-MuiSlider-rail {
+  height: 5px!important;
+}
+span.MuiSlider-thumbColorPrimary.MuiSlider-thumb.css-1bgignw-MuiSlider-thumb {
+  top: 14px!important;
+}
+
+.admin_role {
+  margin-top: 5px;
+}
+.start-date-picker,.end-date-picker{
+  input{
+    font-size: 14px;
+  }
+}
+
+.textarea_form_field{
+  margin-top: 10px;
+  width: 100%;
+textarea{
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+  padding: 16px;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-family: "Inter", sans-serif !important;
+
+}
+}
+input[type='radio']{
+  cursor: pointer;
+  min-height: 16px !important;
+}
+
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  //border-radius: 5px !important;
+}
+
+.active-filter-active {
+  background-color: #0277bd !important;
+  color: white !important;
+}
+.search-filter-section{
+  input{
+    font-size: 14px;
+  }
+}
+
+
+
+.readOnly_field{
+  input{
+    background: #e2e8f0 !important;
+    cursor: not-allowed !important;
+  }
+}
+.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-selected.list_item.css-17z6x6n, .MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-selected.list_item.css-1uwabd6,
+.css-t109xd-MuiButtonBase-root-MuiListItemButton-root.Mui-selected, .css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root.Mui-selected {
+  background: rgba(25,118,210,.322)!important;
+  svg{
+    color: white !important;
+    fill: white !important;
+  }
+  .menu_label{
+    span{
+      color: white;
+    }
+  }
+}
+fieldset{
+  .notranslate{
+    display: none !important;
+  }
+}
+
+.modal_main_popup{
+  textarea{
+    font-family: "Inter", sans-serif !important;
+    box-shadow: none !important;
+    font-size: 14px;
+    margin-top: 0 !important;
+  }
+}
+li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.MuiTablePagination-menuItem.css-10by3a5-MuiButtonBase-root-MuiMenuItem-root-MuiTablePagination-menuItem,
+.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input{
+  font-family: "Inter", sans-serif !important;
+  font-size: 15px;
+}
+
+.loss_color{
+  color: #cb4040 !important;
+}
+
+//.dots_white{
+//  width: 10px;
+//  height: 10px;
+//  background: red;
+//}
+
+.unread_dots_red{
+  width: 8px;
+  height: 8px;
+  background: #ff4d4f;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn_notification{
+  border: none;
+  color: whitesmoke;
+  font-family: "Inter", sans-serif ;
+  padding: 7px 10px;
+}
+.delete_all{
+  background: #ff4d4f;
+  margin-right: 5px;
+}
+.mark_all_as_read{
+  background: #1890ff;
+  margin-left: 5px;
+}
+.custom_close_btn{
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  cursor: pointer;
+}
+.mt_more_margin{
+  margin-top: 12px !important;
+  .game_mode_btn{
+    margin-top: 2px;
+  }
+}
+.chat_refresh_btn {
+    border: none;
+    padding: 5px 10px;
+    background: #0277BD;
+    color: white;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+.chat_refresh_btn:active{
+  background: #028bda;
+}
+
+.add_field, .remove_field{
+  margin-left: 10px;
+  font-weight: 600;
+  letter-spacing: .9px;
+  line-height: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 0.9rem
+}
+.add_field{
+  background: #1d1f2b;
+  max-height: 40px;
+  margin-top: 27px;
+}
+.remove_field{
+  background: #c00c2d;
+  max-height: 40px;
+  margin-top: 27px;
+}
+.checkbox_section{
+  .dropdown_content{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    input{
+      height: 20px;
+      width: 20px;
+      margin-right: 10px;
+      min-height: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+.snackbar {
+  .MuiPaper-root {
+    padding: 0;
+    .MuiSnackbarContent-message {
+      padding: 0;
+      width: 100%;
+      .MuiAlert-root  {
+        padding: 8px;
+      }
+    }
+  }
+}
+
+.loading {
+  background: #fff;
+  height: 50vh;
+}
+
+.ml_10{
+  margin-left: 10px !important;
+}
+.mr_10{
+  margin-right: 10px !important;
+}
+
+.image_banner_ads {
+  img {
+    width: 200px;
+    object-fit: cover;
+  }
+}
+.MuiSelect-select.MuiSelect-select{
+  padding-right: 30px !important
+}
+
+.reset-password-center-form{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%, -50%);
+    // border: 1px solid #0c0d13;
+    // border-radius: 10px;
+}
+.reset_tag{
+  font-size: 19px;
+  margin: 8rem auto 0;
+  width: 13%;
+}
+
+.disabled_button {
+  color: lightgray !important;
+  padding: 0.625rem 1.938rem;
+  border: 1px solid #7b849e;
+  border-radius: 3px;
+  height: 40px;
+  .dot {
+    background: lightgray !important;
+  }
+}

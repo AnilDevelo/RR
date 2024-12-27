@@ -1,0 +1,19 @@
+
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>validation/check-grey</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-Up---Error" transform="translate(-560.000000, -923.000000)">
+            <g id="form" transform="translate(512.000000, 120.000000)">
+                <g id="password-validation" transform="translate(48.000000, 737.000000)">
+                    <g id="validation/x-red" transform="translate(0.000000, 66.000000)">
+                        <path d="M9,-1.08801856e-14 L9,-9.1038288e-15 C13.9705627,-1.00169064e-14 18,4.02943725 18,9 L18,9 C18,13.9705627 13.9705627,18 9,18 L9,18 C4.02943725,18 8.49856682e-14,13.9705627 8.43769499e-14,9 L8.43769499e-14,9 C8.37682315e-14,4.02943725 4.02943725,-8.19075124e-15 9,-9.1038288e-15 Z" id="form/tick/unfilled-2-copy" fill="#C81E1E" fill-rule="evenodd"></path>
+                        <path d="M6,6 L11.6568542,11.6568542" id="Path-3" stroke="#FFFFFF" stroke-width="2"></path>
+                        <path d="M6,6 L11.6568542,11.6568542" id="Path-3" stroke="#FFFFFF" stroke-width="2" transform="translate(8.828427, 8.828427) scale(-1, 1) translate(-8.828427, -8.828427) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

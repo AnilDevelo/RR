@@ -1,0 +1,306 @@
+.popular-game-main-section{
+  .profile-image-dropdown.popularGame_close{
+    .close-icon{
+      right: -7px;
+      top: 16px;
+      left: auto;
+    }
+  }
+}
+
+.popular-game-main-images{
+  display: flex;
+  .profile_label{
+    font-size: 11px;
+  }
+  .user_profile {
+    text-align: initial;
+    .user_profile_pic {
+      border-radius: 0 !important;
+      border: 1px dashed lightgray !important;
+      .addnew {
+        bottom: -8px;
+        height: 30px;
+        position: absolute;
+        right: -14px;
+        width: 30px;
+      }
+      img {
+        height: 100%;
+      }
+    }
+  }
+  p,li{
+    font-family: "Inter", sans-serif ;
+  }
+  .leader_board_game_list_filter {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form_group{
+    height: 100%;
+    .popular-game-first-section{
+      display: flex;
+      .user_profile{
+        height: 334px;
+        width: 200px;
+        .header_section_slider{
+          height: 100%;
+          .user_profile_pic{
+            img{
+              height: 100%;
+            }
+          }
+        }
+      }
+      .dropdown-popular-game{
+        margin-top: 24px;
+        width: 385px;
+        margin-left: 29px;
+        position: relative;
+        .leader_board_game_list_filter{
+          margin: 5px 0 0 0;
+        }
+        .formData_btn{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          button{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .left-side-popular-game{
+    width: 100%;
+  }
+  .right-side-popular-game{
+    width: 100%;
+    .form_group{
+      height: auto;
+      .popular-game-first-section{
+        display: flex;
+
+        .user_profile{
+          height: 200px;
+          width: 200px;
+          .header_section_slider{
+            height: 100%;
+            .user_profile_pic{
+              img{
+                height: 100%;
+              }
+            }
+          }
+        }
+        .dropdown-popular-game{
+          margin-top: 24px;
+          width: 385px;
+          margin-left: 29px;
+          .dropdown-popular-game_inner_section{
+            display: flex;
+            align-items: center;
+            .all_game_select{
+              width: 100%;
+              margin-left: 20px;
+            }
+          }
+          .leader_board_game_list_filter{
+            margin: 5px 0 0 0;
+          }
+          .formData_btn{
+            position: unset;
+            margin-top: 61px;
+            text-align: right;
+            button{
+              margin: 0;
+              font-family: "Inter", sans-serif ;
+            }
+          }
+        }
+      }
+    }
+    .first-banner-form-right{
+      margin-bottom: 10px;
+    }
+    .sec-banner-form-right{
+      padding-top: 10px;
+    }
+  }
+}
+.popular-last-section{
+  display: unset;
+  padding-bottom: 20px;
+  .left-side-popular-game{
+    margin-top: 50px;
+    margin-right: 0;
+    .popular-game-first-section{
+      width: 100%;
+      .dropdown-popular-game,.user_profileDetails-section{
+        width: 100%;
+      }
+      .user_profile{
+        width: 100%;
+        height: 200px;
+        text-align: initial;
+      }
+      .dropdown-popular-game{
+        .formData_btn{
+          position: absolute;
+        }
+      }
+
+    }
+  }
+}
+.popular-main-last-section{
+  margin-top: 30px;
+  .popular-game-main-images .form_group .popular-game-first-section .user_profile {
+    height: auto;
+    width: auto;
+  }
+  .user_profileDetails-section{
+    position: relative;
+    height: 334px;
+    width: 200px;
+  }
+  .popular-game-main-images .form_group .popular-game-first-section .user_profile .header_section_slider .user_profile_pic img{
+    height: 292px;
+    object-fit: cover;
+  }
+  .dropdown-popular-game,.user_profileDetails-section{
+    width: 100%;
+  }
+  .popular-game-main-images .form_group .popular-game-first-section .dropdown-popular-game{
+    width: 100%;
+  }
+  p{
+    font-family: "Inter", sans-serif ;
+  }
+}
+
+label{
+  font-family: "Inter", sans-serif ;
+}
+
+.popular-game-main-section{
+  .form_group.profile.profile-image-dropdown.popularGame_close{
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+.popular-game-main-images .right-side-popular-game .sec-banner-form-right {
+  margin-top: 16px;
+}
+
+.upcoming-popup-details{
+  .user_profile{
+    margin-left: unset !important;
+  }
+  .add_admin_user_popup_title h2{
+    margin-bottom: 25px;
+    font-size: 22px;
+  }
+  .leader_board_game_list_filter{
+    margin: 0;
+    max-width: 100%;
+    margin-top: 5px;
+  }
+  .level_popup_form_field{
+    display: flex;
+  }
+  .level_popup_form_field_left{
+    width: 100%;
+    margin-left:40px;
+    .dropdown_content_list_field {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      input[type='checkbox'] {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        min-height: 15px;
+        margin: 0;
+        margin-right:10px;
+      }
+    }
+  }
+  .profile .user_profile_pic img{
+    border-radius: 0 ;
+  }
+}
+
+// //////////////////////////////////// Responsive Page ////////////////////
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  // Mobile View
+  //Upcoming Games Page start
+  .header_slider_section {
+    overflow: scroll;
+  }
+  //Upcoming Games Page End
+
+  //Popular Games Page start
+  .popular-game-main-images {
+    display: unset !important;
+  }
+  .popular-game-first-section {
+    display: unset !important;
+  }
+  .dropdown-popular-game {
+    width: 100% !important;
+    margin-left: 0 !important;
+    .formData_btn {
+      position: unset !important;
+      margin-top: 10px !important;
+    }
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+  }
+  .level_popup_form_field {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    .level_popup_form_field_left {
+      margin-left: 0 !important;
+      margin-top: 1rem !important;
+    }
+  }
+  .formData_btn {
+    margin-top: 0 !important;
+    .btn_default {
+      padding: 0 !important;
+    }
+  }
+  .modal_popup_title {
+    h2 {
+      font-size: 18px !important;
+    }
+  }
+  //Popular Games Page End
+}
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+  // Tablet View
+  //Popular Games Page start
+  .popular-game-main-images {
+    display: unset !important;
+  }
+  // .form_group {
+  //   margin-top: 1rem !important;
+  // }
+  //Popular Games Page End
+}
+.all_game_dropdown_details{
+  .dropdown-container{
+    height: 48px;
+    .dropdown-heading{
+      height: 100%;
+    }
+  }
+}

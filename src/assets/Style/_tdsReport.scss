@@ -1,0 +1,342 @@
+.tds_report_all_game {
+  display: flex;
+  align-items: start;
+  padding: 0 22px;
+  margin-top: 32px;
+  .mr {
+    margin-right: 10px;
+  }
+  .ml {
+    margin-left: 10px;
+  }
+  .outer-box {
+    margin: 0 16px 16px;
+    width: 100%;
+    h4 {
+      color: #444343;
+      font-size: 16px;
+      letter-spacing: normal;
+      text-transform: capitalize;
+      text-align: left;
+      font-family: "Inter", sans-serif !important;
+    }
+    p {
+      color: #0277bd;
+      font-size: 18px;
+      font-weight: 500;
+
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+}
+
+.tds-all-user-section {
+  .outer-box {
+    padding: 10px;
+  }
+  .tds-main-section {
+    //margin: 32px 40px 0;
+    display: flex;
+    align-items: center;
+    h2 {
+      padding-left: 30px;
+    }
+    .tds-back-btn {
+      padding: 6px 14px 6px 6px;
+      background: white;
+      border-radius: 5px;
+      border: 0px solid lightgray;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      cursor: pointer;
+      color: #0277bd;
+      font-size: 17px;
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+}
+
+.game-mode-config-design {
+  .filter_days_details_dropDown.gst-dropdown_width {
+    width: 100%;
+    margin-top: 7px;
+  }
+}
+
+// //////////////////////////////////// Responsive Page ////////////////////
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  //TDS Report Start
+  .winner_section {
+    display: unset !important;
+  }
+  //TDS Report end
+
+  //TDS User Report Start
+  .css-1ledmdy,
+  .css-glwsed,
+  .css-1koc2pz {
+    width: 300px !important;
+  }
+  //TDS User Report end
+}
+//Notes Start
+.outer-box {
+  @media screen and (min-width: 320px) and (max-width: 1024px) {
+    .avatar-section-data {
+      .avatar-container {
+        display: unset !important;
+      }
+      button {
+        margin-top: 0 !important;
+      }
+      .avatar_container_details {
+        width: auto !important;
+        .avatar-modal {
+          margin-right: 5px !important;
+        }
+      }
+    }
+  }
+}
+//Notes End
+
+.main_address_TDS {
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  color: #27303f;
+  width: 100px;
+  margin: 16px 0 8px;
+}
+.tds_file_section {
+  max-height: 75vh;
+  overflow: auto;
+  padding: 0 32px;
+}
+.date-to {
+  color: black !important;
+}
+
+.tds_challan_table {
+  border: 1px solid #f1f1f1 !important;
+}
+
+.tds_report_all_game.tds_challan_user {
+  padding: 0;
+  margin-top: 10px;
+  .left_margin_challan {
+    margin-left: 0 !important;
+  }
+  .right_margin_challan {
+    margin-right: 0 !important;
+  }
+}
+
+.tds_file_section {
+  .filter_details_tab_section {
+    justify-content: initial;
+  }
+  .start-date-picker {
+    margin: 0 !important;
+    margin-top: 10px !important;
+  }
+  .filter_export_date_dropdown {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.sandbox_tds_popup {
+  .ForwardRef\(InputBase\)-input-3 {
+    padding: 12px 26px 12px 12px;
+  }
+  .MuiSelect-icon {
+    top: calc(49% - 8px);
+    right: 15px;
+  }
+}
+
+.tds_sandbox {
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  span.edit_btn.edit-btn-action {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.sandbox_upload_file_details {
+  .user_kyc_section_filed_document {
+    margin-top: 20px;
+  }
+  .u_file-attachment {
+    background: #fff;
+    width: 100% !important;
+    height: 200px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    border: 1px dashed #d6d9e5;
+    border-radius: 5px;
+    input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      min-height: auto;
+    }
+  }
+}
+.signed_url_box {
+  .edit_btn.edit-btn-action {
+    color: #0277bd !important;
+    font-weight: 500 !important;
+    line-height: 21px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.distribution_form_upload_pdf.error_popup_pdf {
+  form {
+    max-height: 65vh;
+    overflow: auto;
+    padding: 0 32px;
+  }
+}
+
+.distribution_form_upload_pdf {
+  .modal_popup_title {
+    margin-bottom: 10px;
+  }
+  form {
+    max-height: 70vh;
+    overflow: auto;
+    padding: 0 32px;
+  }
+  .file-upload-container {
+    width: 102px;
+    height: 102px;
+    margin-inline-end: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px dashed #d9d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    position: relative;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      svg {
+        margin-bottom: 10px;
+      }
+      input[type="file"] {
+        cursor: pointer;
+        font-size: 0;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.upload_pdf_file {
+  position: relative;
+  height: 66px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  .upload_pdf_file_inner {
+    padding: 8px;
+    width: 100%;
+    .upload_pdf_file_inner_delete {
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      padding: 0;
+    }
+  }
+  .MuiLinearProgress-colorPrimary {
+    height: 2px;
+    background: rgba(0, 0, 0, 0.06) !important;
+  }
+  .MuiLinearProgress-barColorPrimary {
+    height: 2px;
+    background-color: #1677ff !important;
+  }
+}
+.upload_pdf_file_error {
+  border: 1px solid #ff4d4f;
+  //span{
+  //  color: #ff4d4f;
+  //}
+  p {
+    color: #ff4d4f;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .MuiLinearProgress-barColorPrimary {
+    height: 2px;
+    background-color: #ff4d4f !important;
+  }
+}
+
+.upload_pdf_file_success {
+  border: 1px solid #50a14f;
+  p {
+    color: #50a14f;
+    margin-top: 5px;
+    font-size: 13px;
+  }
+}
+//#ff4d4f
+
+.tds_challan_table {
+  position: relative;
+  img {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+  }
+}
+
+.user_tds_icon {
+  padding-left: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.Minor .select-dropdown-main .MuiSelect-select.MuiSelect-select {
+  padding: 0 21px !important;
+}

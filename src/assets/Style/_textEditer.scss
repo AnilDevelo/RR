@@ -1,0 +1,29 @@
+.text-editor-details-section{
+  margin-top: 7px;
+  span,p,h2{
+    color: black;
+  }
+  .editor-content-details{
+    min-height: 150px;
+    max-height: 400px ;
+    padding: 5px ;
+    h2{
+      .public-DraftStyleDefault-block{
+        margin: 0 0 10px;
+      }
+    }
+  }
+  .rdw-editor-wrapper-custom {
+    border: 1px solid #cfd8e3 ;
+    border-radius: 5px ;
+    margin-top: 7px;
+    .rdw-editor-toolbar-custom{
+      background-color: #f6f8fa ;
+      border-radius: 5px ;
+      .rdw-option-wrapper{
+        min-width: 30px;
+        height: 27px;
+      }
+    }
+  }
+}

@@ -1,0 +1,950 @@
+.select_game_option_mode, .select_game_option_mode .select_game_option {
+  margin-top: 10px;
+}
+
+.lobby-type-description{
+  position: relative;
+  input{
+    padding-right: 49px;
+  }
+  span{
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    color: darkgray;
+
+  }
+}
+
+.mb_0 {
+margin-bottom: 0 !important;
+}
+.modal_main_popup{
+  .modal_popup_title{
+    text-align: center;
+    h2{
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: initial;
+      line-height: 28px;
+    }
+  }
+};
+
+.user_popup_section{
+  .publisher_popup{
+    .publisher_popup_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      .cancel_btn{
+        background-color: #FFFFFF00;
+        border: 1px solid #0277BD;
+        color: #0277BD;
+        margin-right: 10px;
+        cursor: pointer;
+        font-family: "Inter", sans-serif ;
+      }
+      .submit_btn{
+        color: #f0f5ff;
+        text-transform: capitalize;
+        background-color: #1976d2;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-family: "Inter", sans-serif ;
+      }
+      button{
+        max-width: 165px;
+        width: 100%;
+        font-size: 14px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+        margin-top: 20px;
+        height: 45px;
+      }
+    }
+  }
+  h2{
+    line-height:  25px;
+    color:  rgb(39, 48, 63);
+    font-size: 20px;
+    margin-top: 7px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif !important;
+  }
+}
+
+.common-modal {
+  .common-modal-inner {
+    text-align: center;
+    border-radius: 6px;
+    background: white;
+    h2 {
+      font-size: 22px !important;
+      margin: 15px !important;
+      line-height: 1 !important;
+      font-weight: 400 !important;
+    }
+    p {
+      color: #494949;
+      line-height: 1.7rem;
+      margin-bottom: 20px;
+      text-align: center;
+      //text-transform: capitalize;
+      font-size: 15px;
+    }
+    button {
+      background: #0277bd;
+      color: #fff;
+      font-weight: 600;
+      line-height: 2rem;
+      max-width: 9.4rem;
+      padding: 8px 2.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.add_admin_user_popup{
+  .input_length_counter{
+    position: relative;
+    span{
+      position: absolute;
+      right: 9px;
+      top: 15px;
+      color: #a1a1a1;
+    }
+  }
+  form {
+    margin-top: 10px;
+    .btn-loader{
+      height: 24px;
+      width: 24px;
+      margin: 0 auto;
+      span{
+        height: 100% !important;
+        width: 100% !important;
+        font-family: "Inter", sans-serif !important;
+        svg{
+          color: aliceblue !important;
+        }
+      }
+    }
+  }
+  .add_admin_user_role{
+    display: flex;
+    flex-direction: column;
+    .role_select_dropdown{
+      border: 1px solid lightgrey;
+      margin-top: 5px;
+      height: 48px;
+      border-radius: 5px;
+      padding: 0 10px;
+    }
+  }
+  &_content{
+    input{
+      display: flex;
+      align-items: stretch;
+      min-height: 48px;
+      border-radius: 4px;
+      padding: 0 16px;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      background-color: white;
+      border: 1px solid #cfd8e3;
+      width: 100%;
+      margin-bottom: 10px;
+      margin-top: 7px;
+    }
+    .admin_list_flex{
+      display: flex;
+      justify-content: space-between;
+      .formData{
+        width: 100%;
+      }
+      .left_side_filed{
+        margin-right: 10px;
+      }
+      .right_side_filed{
+        margin-left: 10px;
+      }
+    }
+  }
+  .formData_btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .default_dropdown.category_listing_dropdown{
+    margin-left:0;
+    .dropdown_value_details{
+      margin-top: 10px;
+      color: black;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #cfd8e3;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+      cursor: pointer;
+      display: flex;
+      font-size: 14px;
+      justify-content: space-between;
+      min-height: 48px;
+      padding: 0 16px;
+      position: relative;
+    }
+    .dropdown_content_value{
+      top: 61px;
+    }
+    .dropdown_content_list{
+      ul{
+        li{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: black;
+          .dropdown_content_list_sub{
+            display: flex;
+            align-items: center;
+          }
+          .dropdown_content_list_field{
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+          }
+          input{
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+            cursor: pointer;
+          }
+          label{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .cate-main-details{
+    //display: flex;
+    //position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .cate-admin-details{
+      box-sizing: border-box;
+      max-width: 100%;
+      height: 24px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      line-height: 22px;
+      background: #f5f5f5;
+      border: 1px solid rgba(0,0,0,.06);
+      border-radius: 2px;
+      cursor: default;
+      transition: font-size .3s,line-height .3s,height .3s;
+      padding: 0 7px;
+      margin-right: 6px;
+    }
+  }
+
+}
+
+.default_dropdown {
+  position: relative;
+  margin-left: 24px;
+
+  .dropdown-active-border {
+    border: 1px solid #0277BD !important;
+  }
+
+  .dropdown_value_details {
+    position: relative;
+    display: flex;
+    min-height: 48px;
+    border-radius: 4px;
+    padding: 0 16px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border: 1px solid #cfd8e3;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .dropdown_content_value {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    background: white;
+    transform-origin: 50% 112px 0px;
+    font-size: 14px;
+    opacity: 1;
+    transform: scaleY(1);
+    max-width: 306px;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-height: 352px;
+    min-width: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 17px;
+    z-index: 8;
+    color: #64748b;
+    .search_filter_dropdown {
+      padding: 10px 15px;
+      position: relative;
+
+      input {
+        padding: 10px 30px 10px 10px !important;
+        border: 1px solid #cfd8e3;
+        border-radius: 6px;
+        max-width: 100%;
+        width: 100%;
+
+        &:focus {
+          outline: none !important;
+        }
+      }
+
+      p {
+        position: absolute;
+        top: 26px;
+        right: 23px;
+        cursor: pointer;
+      }
+      .sub_admin_permission_close_icon{
+        top: 27px !important;
+      }
+    }
+  }
+
+  .dropdown_content_list {
+    max-height: 230px;
+    overflow: auto;
+
+    ul {
+      li {
+        line-height: 3em;
+        height: 3em;
+        color: #64748b;
+        width: 100%;
+        padding: 0 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center
+      }
+    }
+  }
+};
+
+.update_game_modal{
+  padding: 0;
+  .add_game_details.add_game_popup{
+    &_content{
+      padding: 0;
+      &_form{
+        height: 63vh;
+      }
+    }
+  }
+  .add_game_details .add_game_popup_content{
+    padding: 0 ;
+  }
+
+  .popup_form_checkbox.select_label.tab02{
+    margin-bottom: 0;
+  }
+}
+//-------------------------- create Lobby Popup ----------------------------------------------------------
+.create_headToHead_modal{
+
+  .game_approve_tab{
+    .create_headToHead_modal .add_admin_user_popup_title{
+      padding: 0 !important;
+    }
+  }
+  .add_admin_user_popup_content{
+    max-height: 72vh;
+    overflow: auto;
+    padding: 0 32px 32px;
+  }
+  .add_admin_user_popup_title {
+    padding: 32px 32px 15px;
+  }
+  form {
+    .formData {
+      margin-bottom: 10px;
+      width: 100%;
+      .emailWrap {
+        position: relative;
+        .wrap_input_modal{
+          padding-right: 50px;
+        }
+        span {
+          color: #97a6ba;
+          position: absolute;
+          right: 12px;
+          top: 15px;
+        }
+      }
+    }
+    .tournament_setting_content{
+      margin-top: 0px;
+      h3 {
+        align-items: center;
+        display: flex;
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 20px;
+        svg {
+          height: 20px;
+          width: 20px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .winning_prize{
+      margin-top: 0;
+    }
+    .entryFee-section-inner,.winning_prize{
+      label{
+        align-items: center;
+        display: flex;
+        svg {
+          height: 20px;
+          width: 20px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .tournament_setting_amount{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0;
+      .form_amount_tab01{
+        margin-right: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        .emailWrap{
+          input{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .form_amount_tab03{
+        margin-left: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+        .emailWrap{
+          input{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .entryFee-section{
+      .entryFee-section-inner {
+        margin-right: 10px;
+      }
+      .formData.leaderboard_field.readonly-input {
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .platform-gst-details{
+      display: flex;
+      .formData.leaderboard_field{
+        width: 60%;
+        .gst-dropdown_width{
+          width: 96%;
+        }
+      }
+      .MuiFormControl-root.makeStyles-margin-25{
+        width: 229px;
+      }
+    }
+    .real_money_field {
+      margin-top: 10px;
+      .formData{
+        margin-top: 4px;
+      }
+    }
+    .common_checkbox_details {
+      width: 100%;
+      .game_mode_btn {
+        display: flex;
+        margin-top: 3px;
+      }
+    }
+
+    .entryFee-section{
+      display: flex;
+      .entryFee-section-inner{
+        width: 100%;
+        margin-right: 10px;
+      }
+      .formData.leaderboard_field.readonly-input{
+        margin: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+};
+
+//------------------------------ Game mode --------------------------------------------------
+.game_mode_popup{
+  .profile{
+    .user_profile_pic{
+      img{
+        border-radius: 5% !important;
+      }
+    }
+  }
+  .game_filed_details{
+    padding-left: 40px;
+    .formData{
+      margin-top: 0;
+    }
+  }
+};
+
+//------------------------------- Number of Deck ------------------------------------------
+.number-of-deck-popup{
+  .common_checkbox_details .game_mode_btn{
+    margin-top: 3px;
+  }
+}
+//---------------------------- Leaderboard---------------------
+.leaderboard-bonus-section{
+  .filter_days_details_dropDown{
+    margin-top: 5px;
+  }
+}
+//Game Build
+.game_build_details{
+  .add_admin_user_popup{
+    margin-top: 32px;
+  }
+  .manage_game_builds{
+    max-height: 74vh;
+    overflow: auto;
+    padding: 0 32px 32px;
+    margin-top: 30px !important;
+    max-width: initial !important;
+    .manage_game_builds_details_flex{
+      display: flex;
+      width: 100%;
+      .release_Guide_section{
+        width: 100%;
+        margin-right: 10px;
+        .formData{
+          margin-top: 0;
+        }
+      }
+      div#mui-component-select-mgpReleaseVersion{
+        padding: 13px 26px 13px 12px;
+      }
+      .mb_build{
+        width: 100%;
+        margin: 0 0 0 10px;
+      }
+      .select_game_option {
+        margin-top: 8px;
+      }
+      .manage_game_builds_details_field{
+        width: 100%;
+
+      }
+      .main_label{
+        font-weight: 600;
+      }
+      .field_tab_build01{
+        margin-right: 20px;
+      }
+      .field_tab_build02{
+        margin-left: 20px;
+        .release_Guide_section{
+          margin-top: 10px;
+        }
+      }
+    }
+  };
+  .game_build_uploader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    .user_kyc_section_filed_document{
+      .document_details_kyc{
+        width: 100px;
+        margin-top: 7px;
+        .u_file-attachment{
+          background: #fff;
+          width: 100px !important;
+          height: 100px !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          cursor: pointer;
+          margin-right: 15px;
+          border: 1px dashed #d6d9e5;
+          border-radius: 5px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          input{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            min-height:auto;
+          }
+        }
+      }
+    }
+  }
+  .manage_game_builds_details_field{
+    .Add-sdk-input-sce{
+      margin-bottom: 10px;
+    }
+    .manage_builds_link_flex{
+      display: flex;
+      .release_guide_link{
+        width: 100%;
+        margin-right: 10px;
+      }
+      .release_code_url{
+        width: 100%;
+        margin-left: 10px;
+      }
+    }
+  }
+};
+
+.how_to_play_section_details{
+  .header_slider_details_Ads{
+    .user_profile{
+      width: 100% !important;
+      .header_section_slider{
+        border: 1px dashed #cfd8e3 !important;
+        border-radius: 4px;
+        margin-top: 10px;
+        .add_new {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        .add_new input[type=file] {
+          cursor: pointer;
+          font-size: 0;
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        .user_profile_pic {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          border: none;
+        }
+      }
+    }
+  }
+  .filter_export_details_dropDown{
+    margin-top: 5px;
+  }
+};
+
+.formData_field.upload_img_section {
+  margin-bottom: 10px;
+  //position: absolute;
+  //left: 26%;
+  //max-width: 660px;
+  //width: 100%;
+  //height: 92px;
+  //top: 322px;
+  .upload__image-wrapper{
+    display: flex;
+    justify-content: space-between;
+    .upload__image_section{
+      button{
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        img{
+          border: none;
+          width: 57px;
+          height: 100%;
+        }
+      }
+    }
+    .upload_img_slider{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 0 0 78px;
+      .image-item{
+        position: relative;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        img.image-upload{
+          border-radius: 10px;
+          height: 75px;
+          object-fit: cover;
+          width: 75px
+        }
+        .close_upload_icon{
+          position: absolute;
+          right: -6px;
+          top: -6px;
+
+          button{
+            background: transparent;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+};
+
+.game_release_section_modal{
+  .select_game_release {
+    height: 48px;
+    margin-top: 7px;
+    .dropdown-container{
+      height: 100%;
+    }
+    input{
+      min-height: auto !important;
+    }
+  };
+  .game_release_section_date{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    input{
+      min-height: auto;
+      font-size: 14px;
+      border: none !important;
+      font-family: Inter, sans-serif !important;
+    }
+    .MuiFormControl-root.MuiTextField-root.date-picker-section.css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+      border: 1px solid #cfd8e3 !important;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+      height: 48px;
+    }
+  }
+}
+
+
+
+.radius_location_form{
+  display: flex;
+  justify-content: space-between;
+  .radius-location{
+    width: 25%;
+  }
+  .radius-location-range{
+    width: 100%;
+    h2{
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  .slider-location{
+    width: 50% ;
+    span.MuiSlider-colorPrimary.MuiSlider-root.css-h2gz9i-MuiSlider-root{
+      width: 100% !important;
+    }
+    .css-h2gz9i-MuiSlider-root{
+      color: #2977bd !important;
+    }
+  }
+  .MuiSlider-valueLabelLabel{
+    font-size: 10px !important;
+    font-family: "Inter", sans-serif !important;
+  }
+}
+
+.tracking_players_form{
+  button{
+    margin: 0;
+  }
+  .radius_location_form{
+    display: block;
+    .tracking-days-game{
+      width: 100%;
+      //padding-left: 30px;
+      .formData{
+        input{
+          display: flex;
+          align-items: stretch;
+          min-height: 48px;
+          border-radius: 6px;
+          padding: 0 16px;
+          background-color: white;
+          border: 1px solid #cfd8e3;
+          margin-bottom: 10px;
+          margin-top: 7px;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+.scoreBoard-details-section {
+  .content{
+    .header{
+      display: flex;
+      gap: 1rem;
+      margin: 0rem 2rem;
+      .col{
+        align-items: center;
+        display: flex;
+        flex: 1 1;
+        flex-wrap: wrap;
+        font-weight: 700;
+        border-right: 1px solid lightgrey;
+        .col_title{
+          text-align: center;
+          //width: 100%;
+        }
+        img{
+
+          width: 70px;
+          height: 70px;
+
+          object-fit: cover;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+        h2{
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+    }
+    .row {
+      //padding: 2rem;
+      //display: flex;
+      //gap: 1rem;
+      //border-radius: 10px;
+      //margin-bottom: 2rem;
+      //padding: 12px 0;
+      display: flex;
+      gap: 1rem;
+      border-radius: 10px;
+      border: 1px solid lightgrey;
+      margin: 0 2rem;
+
+      .col {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        border-right: 1px solid lightgrey;
+        .avatar {
+          width: 4rem;
+          height: 4rem;
+          color: black;
+          border-radius: 5px;
+          margin-right: 1rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+};
+
+.view_description_details{
+  padding:  32px 0;
+  .rejected_modal_content_text{
+    padding: 0 32px;
+    overflow: auto;
+    max-height: 74vh;
+    p,h2,span{
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+}
+
+.release_guid_link_sec{
+  p{
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif !important;
+    button{
+      border: none;
+      padding: 10px 26px;
+      border-radius: 5px;
+      color: #1976d2;
+      cursor: pointer;
+      margin-left: 10px;
+      background: transparent;
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+}
+
+.level_popup_form_field{
+  display: flex;
+  .new_game_section{
+    width: auto;
+    padding: 0;
+  }
+  .level_popup_form_field_left{
+    width: 100%;
+    margin-left: 38px;
+  }
+}
+
+.add_avatar_section{
+  .profile .user_profile_pic img{
+    border-radius: 0;
+  }
+}
+
+
+
+.add_admin_user_popup_content {
+  input{
+    font-size: 14px;
+  }
+}
+
+.formData .emailWrap .game_edit_info_span{
+  top: 13px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif !important;
+}

@@ -1,0 +1,32 @@
+.tds_report_all_game,
+.gst_report {
+  display: flex;
+  align-items: start;
+  padding: 0 22px;
+  margin-top: 32px;
+  .mr {
+    margin-right: 10px;
+  }
+  .ml {
+    margin-left: 10px;
+  }
+  .outer-box {
+    margin: 0 16px 16px;
+    width: 100%;
+    h4 {
+      color: #444343;
+      font-size: 16px;
+      letter-spacing: normal;
+      text-transform: capitalize;
+      text-align: left;
+      font-family: "Inter", sans-serif !important;
+    }
+    p {
+      color: #0277bd;
+      font-size: 18px;
+      font-weight: 500;
+
+      font-family: "Inter", sans-serif !important;
+    }
+  }
+}
