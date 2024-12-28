@@ -265,4 +265,5 @@ PopComponent["ViewBank"] = require("../Components/Modal/ViewBank").default;
 PopComponent["AddBank"] = require("../Components/Modal/AddBankDetails").default;
 PopComponent["AddUTR"] = require("../Components/Modal/ADDUTR").default;
 
+
 export default PopComponent;
