@@ -41,7 +41,7 @@ const ViewInvoicePopup = ({ modalValue, handleOpenModal }) => {
           <div className="top">
             <div>
               <p>
-                <b>Artoon Solutions Private Limited</b> <br />
+                <b>Payout Solutions Private Limited</b> <br />
                 C-301, Diamond World, Varachha <br />
                 Road, Kohinoor Rd, Mini Bazar,
                 <br />
@@ -91,18 +91,12 @@ const ViewInvoicePopup = ({ modalValue, handleOpenModal }) => {
           <div className="terms">
             <p>
               <b>Terms & Conditions:</b> Refer To{" "}
-              <a href="https://artoonsolutions.com/">
-                https://artoonsolutions.com
-              </a>
             </p>
           </div>
         </div>
         <div className="condi">
           <p style={{ margin: "0" }}>
             <b>Privacy & Policy:</b> Refer To{" "}
-            <a href="https://artoonsolutions.com/">
-              https://artoonsolutions.com
-            </a>
           </p>
         </div>
       </div>

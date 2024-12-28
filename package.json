@@ -58,7 +58,7 @@
   },
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false env-cmd -f .env react-scripts build",
+    "build": "env-cmd -f .env react-scripts build",
     "build:staging": "GENERATE_SOURCEMAP=false env-cmd -f .env.staging react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

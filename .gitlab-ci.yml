@@ -7,7 +7,7 @@ deploy_development:
     - new-dev-server
   environment:
     name: development
-    url: https://mgp.artoon.in
+    url: https://mgp.rr.in
   before_script:
     - eval export PATH=/root/.nvm/versions/node/v14.17.3/bin:${PATH}
   script:
