@@ -378,156 +378,24 @@ export const AdminRole = [
     id: 2,
   },
   {
-    label: "Game",
-    value: "game",
-    game: {
+    label: "Client user",
+    value: "clientUser",
+    clientUser: {
       editor: false,
       viewer: false,
     },
     id: 3,
   },
   {
-    label: "Analytics",
-    value: "analytics",
-    analytics: {
+    label: "Trader user",
+    value: "traderUser",
+    traderUser: {
       editor: false,
       viewer: false,
     },
     id: 4,
   },
-  {
-    label: "Popular Game",
-    value: "popularGame",
-    popularGame: {
-      editor: false,
-      viewer: false,
-    },
-    id: 5,
-  },
-  {
-    label: "Bonus",
-    value: "bonus",
-    bonus: {
-      editor: false,
-      viewer: false,
-    },
-    id: 6,
-  },
-  {
-    label: "Revenue",
-    value: "revenue",
-    revenue: {
-      editor: false,
-      viewer: false,
-    },
-    id: 7,
-  },
-  {
-    label: "Master",
-    value: "master",
-    master: {
-      editor: false,
-      viewer: false,
-    },
-    id: 8,
-  },
-  {
-    label: "Marketing",
-    value: "marketing",
-    marketing: {
-      editor: false,
-      viewer: false,
-    },
-    id: 9,
-  },
-  {
-    label: "Design",
-    value: "design",
-    design: {
-      editor: false,
-      viewer: false,
-    },
-    id: 10,
-  },
-  // {
-  //     label: 'Website',
-  //     value: 'webSite',
-  //     webSite:{
-  //         editor:false,
-  //         viewer:false,
-  //     }
-  // },
-  {
-    label: "Setting",
-    value: "setting",
-    setting: {
-      editor: false,
-      viewer: false,
-    },
-    id: 11,
-  },
-  {
-    label: "MGP Release",
-    value: "mgpRelease",
-    mgpRelease: {
-      editor: false,
-      viewer: false,
-    },
-    id: 12,
-  },
-  {
-    label: "Withdrawal",
-    value: "withdrawal",
-    withdrawal: {
-      editor: false,
-      viewer: false,
-    },
-    id: 13,
-  },
-  {
-    label: "GST",
-    value: "gst",
-    gst: {
-      editor: false,
-      viewer: false,
-    },
-    id: 14,
-  },
-  {
-    label: "TDS Report",
-    value: "tdsReport",
-    tdsReport: {
-      editor: false,
-      viewer: false,
-    },
-    id: 15,
-  },
-  {
-    label: "Help & Support",
-    value: "helpAndSupport",
-    helpAndSupport: {
-      editor: false,
-      viewer: false,
-    },
-    id: 16,
-  },
-  // {
-  //   label: "History",
-  //   value: "history",
-  //   history: {
-  //     editor: false,
-  //     viewer: false,
-  //   },
-  // },
-  {
-    label: "Tournament",
-    value: "gameTournament",
-    gameTournament: {
-      editor: false,
-      viewer: false,
-    },
-    id: 17,
-  },
+ 
 ];
 
 // export const AdminRole = [
