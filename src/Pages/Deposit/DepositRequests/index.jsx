@@ -52,7 +52,7 @@ const Users = () => {
                 accountHolder: "Jane Smith",
                 accountNumber: "987654321",
                 ifscCode: "BANK0002",
-                status: "Completed",
+                status: "Pending",
             },
         ],
         totalDocs: 2,
@@ -101,9 +101,28 @@ const Users = () => {
     }, [pagination.rowsPerPage, pagination.page]);
 
     const handleOpenModal = (type, data) => {
+        console.log("ddd")
         switch (type) {
           
           case "ViewBank": {
+            setModalDetails({
+              ...modalDetails,
+              modalValue: data,
+              modalName: type,
+              modalIsOpen: true,
+            });
+            break;
+          }
+          case "AddUTR": {
+            setModalDetails({
+              ...modalDetails,
+              modalValue: data,
+              modalName: type,
+              modalIsOpen: true,
+            });
+            break;
+          }
+          case "AddBank": {
             setModalDetails({
               ...modalDetails,
               modalValue: data,
@@ -127,11 +146,11 @@ const Users = () => {
             label: "Client ID",
             type: "custom",
             render: (row) => (
-                <TableCell>
+                <TableCell   onClick={()=>  handleOpenModal("AddUTR", { row })} >
                     <span
                         className="edit_btn"
-                        onClick={() => navigate(`/users-tab/${row.id}`)}
-                    >{`CID000${row?.numericId}`}</span>
+                      
+                    >{`UTRD000${row?.numericId}`}</span>
                 </TableCell>
             ),
         },
@@ -188,19 +207,21 @@ const Users = () => {
         {
             id: "action",
             numeric: false,
-            label: "Action",
+            label: "Actiond",
             type: "custom",
             render: (row) => (
                 <TableCell>
+                    {console.log("D",row)}
                     {row.status === "Pending" && (
                         <Button
                             variant="contained"
                             // color="primary"
-                            onClick={() => handleModalOpen(row)}
+                            style={{cursor:"pointer"}}
+                            onClick={()=> handleOpenModal("AddBank", { row })}
                         >
                             Enter Bank Account
                         </Button>
-                    )}
+                    )}  
                 </TableCell>
             ),
         },
