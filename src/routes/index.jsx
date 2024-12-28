@@ -131,7 +131,7 @@ export const PublicroutesArray = [
 export const PrivateroutesArray = [
     { path: "/dashboard", component: Dashboard, title: "Dashboard" },
     { path: "/change-password", component: ChangePassword, title: "Change Password" },
-    { path: "/admin-users", component: AdminUser, title: "Admin Role" },
+    { path: "/admin-users", component: AdminUser, title: "Users" },
     { path: "/Client_user", component: ClientUser, title: "Users" },
     { path: "/trader_user", component: TraderUser, title: "Users" },
     //User

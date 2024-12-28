@@ -45,7 +45,7 @@ function Header(props) {
 
   const getNotificationCountFunc = () => {
     dispatch(getUnreadNotificationCount({})).then((res) => {
-      if (res.data.success) {
+      if (res?.data?.success) {
         setNotificationCount(res?.data?.data);
       }
     });

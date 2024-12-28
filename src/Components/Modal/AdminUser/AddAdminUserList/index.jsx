@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { Box } from "@mui/material";
 import FilledButton from "../../../FileButton";
 import { useDispatch } from "react-redux";
 import SimpleReactValidator from "simple-react-validator";
@@ -10,6 +9,7 @@ import HelpAndSupportTicketTypeDropdown from "./HelpAndSupportTicketTypeDropdown
 import {helpTicketTypeArr} from "../../../../utils";
 import { createAdminUserList, updateAdminUserList} from "../../../../Redux/AdminUser/action";
 import {getLeaderboardGameList} from "../../../../Redux/Bonus/action";
+import { Box, FormControl, FormControlLabel, Radio, RadioGroup,  DialogContent, Grid } from "@mui/material";
 
 const style = {
     position: 'absolute',
@@ -27,6 +27,9 @@ const AddAdminUserList = ({ modalValue, handleOpenModal, redirectApiHandler }) =
     const dispatch = useDispatch();
     const [loader, setLoader] = useState(false);
     const [phoneNumberValidation, setPhoneNumberValidation] = useState(true)
+    const [quickPay, setQuickPay] = useState(false);
+    const [regularPay, setRegularPay] = useState(false);
+
     const simpleValidator = useRef(new SimpleReactValidator({
         validators: {
             email: {
@@ -242,6 +245,20 @@ const AddAdminUserList = ({ modalValue, handleOpenModal, redirectApiHandler }) =
                             </div>
                         </div>
 
+                        <Grid item xs={12} sm={6}>
+          <FormControl component="fieldset">
+            <RadioGroup row value={quickPay || regularPay ? "both" : ""}>
+              <FormControlLabel
+                control={<Radio checked={quickPay} onChange={() => setQuickPay(!quickPay)} />}
+                label="Quick Pay"
+              />
+              <FormControlLabel
+                control={<Radio checked={regularPay} onChange={() => setRegularPay(!regularPay)} />}
+                label="Regular Pay"
+              />
+            </RadioGroup>
+          </FormControl>
+        </Grid>
                         {/*{*/}
                         {/*    (permission?.helpAndSupport?.editor || permission?.helpAndSupport?.viewer) &&*/}
                         {/*    <>*/}

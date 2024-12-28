@@ -40,13 +40,13 @@ function LeftContent() {
             value: 'dashboard',
             hasMoreMenu: false,
         },
-        {
-            icon: <UserIcon />,
-            label: "Admin Users",
-            src: "admin-users",
-            value: 'admin',
-            hasMoreMenu: false,
-        },
+        // {
+        //     icon: <UserIcon />,
+        //     label: "Admin Users",
+        //     src: "admin-users",
+        //     value: 'admin',
+        //     hasMoreMenu: false,
+        // },
         {
             icon: <UserIcon />,
             label: "Client user",
@@ -75,32 +75,32 @@ function LeftContent() {
                     label: "All Users",
                     src: "Users",
                 },
-                {
-                    icon: '',
-                    label: "Inactive Users",
-                    src: "inactive-users",
-                },
-                {
-                    icon: '',
-                    label: "Users Blocked",
-                    src: "block-user",
-                },
-                {
-                    icon: '',
-                    label: "Users Reported",
-                    src: "user-reported",
-                },
-                {
-                    icon: '',
-                    label: "Users KYC",
-                    src: "user-kyc",
-                },
+                // {
+                //     icon: '',
+                //     label: "Inactive Users",
+                //     src: "inactive-users",
+                // },
+                // {
+                //     icon: '',
+                //     label: "Users Blocked",
+                //     src: "block-user",
+                // },
+                // {
+                //     icon: '',
+                //     label: "Users Reported",
+                //     src: "user-reported",
+                // },
+                // {
+                //     icon: '',
+                //     label: "Users KYC",
+                //     src: "user-kyc",
+                // },
 
-                {
-                    icon : '',
-                    label: settingFlag?.isMobileNumberUpdateRequest ?  'Users Mobile Number Request' : "Users Mobile Number Request",
-                    src:'user/update-mobile-number'
-                },
+                // {
+                //     icon : '',
+                //     label: settingFlag?.isMobileNumberUpdateRequest ?  'Users Mobile Number Request' : "Users Mobile Number Request",
+                //     src:'user/update-mobile-number'
+                // },
                 // {
                 //     icon: '',
                 //     label: "Users Withdrawal Requests",
@@ -296,7 +296,7 @@ function LeftContent() {
     }
     useEffect(()=>{
         dispatch(getPermissionsKey()).then(res=>{
-            setPermotions(res.data.data.agentData)
+            setPermotions(res?.data?.data?.agentData)
         })
     },[])
     return (

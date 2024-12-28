@@ -12,6 +12,7 @@ PopComponent["EditSubAdminPopup"] = require("../Pages/SubAdminUser/EditSubAdminP
 PopComponent["ActivateDeactivateSubAdmin"] = require("../Pages/SubAdminUser/ActivateDeactivateSubAdmin").default;
 
 //============================================= User Module Popup ================================================
+PopComponent["AddTraderUser"] = require("../Components/Modal/TraderUser/AddAdminUserList").default;
 PopComponent["BlockUser"] = require("../Components/Modal/User/BlockUser").default;
 PopComponent["ViewTransitionHistory"] = require("../Components/Modal/User/ViewTransitionHistory").default;
 // PopComponent["ViewGamePlayedHistory"] = require("../Components/Modal/User/ViewGamePlayedHistory").default;
