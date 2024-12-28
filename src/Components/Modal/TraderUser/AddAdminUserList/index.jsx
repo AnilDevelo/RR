@@ -88,11 +88,11 @@ const AddTraderUserList = ({ modalValue, handleOpenModal, redirectApiHandler }) 
 
     return (
         <Box sx={style}>
-            <div className={'modal_main_popup add_trader_user_popup'}>
+            <div className={'modal_main_popup add_admin_user_popup'}>
                 <div className={'modal_popup_title'}>
                     <h2>{`${modalValue?.isEdit ? 'Update Trader' : 'Add Trader'}`}</h2>
                 </div>
-                <div className={'add_trader_user_popup_content'}>
+                <div className={'add_admin_user_popup_content'}>
                     <form method={'POST'} onSubmit={handleSubmit}>
                         <div className="formData">
                             <label>Enter Trader Name <span className={'validation-star'}>*</span></label>

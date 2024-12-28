@@ -117,11 +117,17 @@ const GSTReport = React.lazy(() => import("../Pages/GST/GSTReport"))
 //history
 const History  = React.lazy(() => import("../Pages/History"));
 
+
 //tournament
 const Tournament = React.lazy(() => import("../Pages/Tournament/AddNewTurnament"));
 const AllTournamentList = React.lazy(() => import("../Pages/Tournament/AllTurnamentList"));
 const TournamentDocuments = React.lazy(() => import("../Pages/Tournament/TournamentDocuments"));
 const TournamentTab = React.lazy(() => import("../Pages/Tournament/TournamentTab"));
+
+
+// Deposit
+const Deposit = React.lazy(()=>import("../Pages/Deposit/DepositRequests"))
+const DepositTransactionsHistory = React.lazy(()=>import('../Pages/Deposit/DepositTransactionsHistory'))
 
 export const PublicroutesArray = [
     { path: "/", exact: true, component: Login },
@@ -132,7 +138,7 @@ export const PrivateroutesArray = [
     { path: "/dashboard", component: Dashboard, title: "Dashboard" },
     { path: "/change-password", component: ChangePassword, title: "Change Password" },
     { path: "/admin-users", component: AdminUser, title: "Users" },
-    { path: "/Client_user", component: ClientUser, title: "Users" },
+    { path: "/user_client", component: ClientUser, title: "Users" },
     { path: "/trader_user", component: TraderUser, title: "Users" },
     //User
     { path: "Users", component: UserData, title: "Users" },
@@ -231,6 +237,11 @@ export const PrivateroutesArray = [
     {path: '/upi-qr-code', component: UPITransaction, title: "Add UPI QR Code"},
     {path: '/withdrawal-manually', component: WithdrawManually, title: "Withdraw Manually"},
     {path: '/platform-report', component: PlatformReport, title: "Platform Report"},
+
+
+    // Deposit 
+    {path: '/user-deposit-requests', component: Deposit, title: "Deposit"},
+    {path: '/deposit-transactions-history', component: DepositTransactionsHistory, title: "Deposit Transactions History"},
 
     // GST
     { path: "/gst-filing", component: GSTFile, title: "GST Filing" },

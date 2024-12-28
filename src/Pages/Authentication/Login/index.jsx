@@ -53,13 +53,13 @@ const Login = () => {
                 password: formData?.password
             }
             dispatch(loginUser(payload)).then(res => {
-                if (res.data.success) { 
+                if (res?.data?.success) { 
                     toast.success(res.data.message || res?.data?.msg);
                     navigate('/dashboard');
                     setLoader(false)
                 } else {
                     // handleOpenModal('CommonPop', { header: "Error", body: res.data.message || res?.data?.msg })
-                    toast.error(res.data.message || res?.data?.msg);
+                    toast.error(res?.data?.message || res?.data?.msg);
                     setLoader(false)
                 }
             })

@@ -50,8 +50,8 @@ function LeftContent() {
         {
             icon: <UserIcon />,
             label: "Client user",
-            src: "Client_user",
-            value: 'trader_user',
+            src: "user_client",
+            value: 'user_client',
             hasMoreMenu: false,
         },
         {
@@ -172,6 +172,21 @@ function LeftContent() {
                     icon: '',
                     label: "Payment Gateway",
                     src: "payment-gateway",
+                },
+            ]
+        },
+        {
+            icon: <AccountBalanceIcon />,
+            label: "Admin Withdrawal",
+            hasMoreMenu: true,
+            isExpanded: false,
+            id: 'admin_withdrawal',
+            value: 'admin_withdrawal',
+            expandArray: [
+                {
+                    icon: '',
+                    label: "Bank and UPI",
+                    src: "bank-and-upi",
                 },
             ]
         },

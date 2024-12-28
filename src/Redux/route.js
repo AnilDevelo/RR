@@ -1,4 +1,4 @@
-export const AUTH_LOGIN = 'auth/login';
+export const AUTH_LOGIN = 'admin/login';
 export const AUTH_CHANGE_PASSWORD = 'auth/changePassword';
 export const AUTH_FORGOT_PASSWORD = 'auth/forgotPassword';
 export const AUTH_RESET_PASSWORD = 'auth/resetPassword';

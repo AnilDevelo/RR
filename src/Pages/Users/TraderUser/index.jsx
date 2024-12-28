@@ -11,6 +11,7 @@ import { getAllUserDetailsList } from "Redux/user/action";
 import MainCommonFilter from "Components/MainCommonFilter";
 import CustomTable from "hoc/CommonTable";
 import CommonModal from "hoc/CommonModal";
+import SearchInput from '../../../Components/SearchInput';
 
 
 const Users = () => {
@@ -42,17 +43,17 @@ const Users = () => {
     platformName: "All Users",
     state: "All States",
   });
-  const [dateFilter,setDateFilter] = useState(filterData);
-  let prevDateFilter  = React.useRef(dateFilter);
+  const [dateFilter, setDateFilter] = useState(filterData);
+  let prevDateFilter = React.useRef(dateFilter);
 
   useEffect(() => {
-    if(filterData?.statusValue ==='Custom' && filterData.startDate === null && filterData.endDate === null && prevDateFilter?.current?.statusValue !== 'Custom'  ){
-        getUserListData(prevDateFilter?.current?.startDate, prevDateFilter?.current?.endDate);
+    if (filterData?.statusValue === 'Custom' && filterData.startDate === null && filterData.endDate === null && prevDateFilter?.current?.statusValue !== 'Custom') {
+      getUserListData(prevDateFilter?.current?.startDate, prevDateFilter?.current?.endDate);
     }
     else if (filterData.startDate && filterData.endDate || filterData?.statusValue === 'All Days') {
-        getUserListData(filterData.startDate, filterData.endDate,filterData.search);
+      getUserListData(filterData.startDate, filterData.endDate, filterData.search);
     }
-}, [pagination.rowsPerPage, pagination.page, filterData.exportFile, filterData.csvDownload, filterData.startDate, filterData.endDate, filterData?.platformName, filterData?.state, filterData?.statusValue]);
+  }, [pagination.rowsPerPage, pagination.page, filterData.exportFile, filterData.csvDownload, filterData.startDate, filterData.endDate, filterData?.platformName, filterData?.state, filterData?.statusValue]);
 
   // get Users Api and All Filter Api
   const getUserListData = (startDate, endDate, search) => {
@@ -65,7 +66,7 @@ const Users = () => {
       start: startRange || page * rowsPerPage,
       // searchText: search ? search : state === "All States" ? "" : state,
       searchText: search,
-      state:state === 'All States' ? '' : state,
+      state: state === 'All States' ? '' : state,
       startDate: startDate ? moment(startDate).format("YYYY-MM-DD") : null,
       endDate: endDate ? moment(endDate).format("YYYY-MM-DD") : null,
       isBlock:
@@ -94,7 +95,7 @@ const Users = () => {
         );
       }
       if (res?.data?.data?.filePath) {
-        window.open(res?.data?.data?.filePath,"_blank");
+        window.open(res?.data?.data?.filePath, "_blank");
       }
     });
   };
@@ -200,7 +201,7 @@ const Users = () => {
                 Block User Account
               </span>
             )}
-    
+
             {/* Edit User */}
             <span
               className="edit_btn edit-btn-action"
@@ -212,7 +213,7 @@ const Users = () => {
             >
               Edit User
             </span>
-    
+
             {/* Delete User */}
             <span
               className="edit_btn edit-btn-action"
@@ -264,6 +265,11 @@ const Users = () => {
     getUserListData(filterData.startDate, filterData.endDate);
   };
 
+  const handleSearch = (searchTerm) => {
+	console.log("Search term:", searchTerm);
+	// Logic for filtering/searching can be added here  
+};
+
   useEffect(() => {
     setPagination({
       rowsPerPage: 10,
@@ -271,25 +277,26 @@ const Users = () => {
       startRange: "",
       endRange: "",
     })
-  }, [filterData?.platformName,filterData?.statusValue,filterData?.state])
+  }, [filterData?.platformName, filterData?.statusValue, filterData?.state])
   return (
     <Box>
       <Paper sx={{ mb: 2 }} className="outer-box">
-   
+
         <div className={"d_flex justify_content_between"}>
           <h2>User ({userList?.list == 0 ? 0 : userList?.totalDocs})</h2>
           <div className={"d_flex"}>
-		  <div className={"d_flex_end"}>
-          <button
-            className={"btn"}
-            onClick={() =>
-              handleOpenModal("AddTraderUser", { isEdit: false })
-            }
-          >
-            {" "}
-            + Add Trader 
-          </button>
-        </div>
+            <div className={"d_flex justify_content_between"} style={{gap:'10px'}}>
+			<SearchInput onSearch={handleSearch} /> 
+              <button
+                className={"btn"}
+                onClick={() =>
+                  handleOpenModal("AddTraderUser", { isEdit: false })
+                }
+              >
+                {" "}
+                + Add Trader
+              </button>
+            </div>
           </div>
         </div>
         <CustomTable

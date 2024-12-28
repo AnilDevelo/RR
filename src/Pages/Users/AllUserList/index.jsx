@@ -114,221 +114,159 @@ const Users = () => {
 
   // table columns
   let columns = [
-    {
-      id: "",
-      twoLineText: true,
-      label: "Sr. no.",
-      type: "custom",
-      render: (row, i) => renderSrNo(row, i, pagination),
-    },
-    {
-      id: "id",
-      numeric: false,
-      disablePadding: false,
-      label: "Users ID",
-      type: "custom",
-      render: (row, i) => {
-        return (
-          <TableCell>
-            <span
-              className="edit_btn"
-              onClick={() => navigate(`/users-tab/${row.id}`)}
-            >{`UID000${row?.numericId}`}</span>
-          </TableCell>
-        );
-      },
-    },
+		{
+			id: "ClientId",
+			numeric: false,
+			disablePadding: false,
+			label: "User ID",
+			type: "custom",
+			render: (row, i) => {
+				return (
+					<TableCell>
+						<span
+							className="edit_btn"
+							onClick={() => navigate(`/users-tab/${row.id}`)}
+						>{`UID000${row?.numericId}`}</span>
+					</TableCell>
+				);
+			},
+		},
 
-    {
-      id: "fullName",
-      numeric: true,
-      disablePadding: false,
-      label: "Full Name",
-    },
+		{
+			id: "ClientName",
+			numeric: true,
+			disablePadding: false,
+			label: "User Name",
+		},
 
-    {
-      id: "nickName",
-      numeric: true,
-      disablePadding: false,
-      label: "Users Name",
-    },
-    {
-      id: "phoneNumber",
-      numeric: true,
-      disablePadding: false,
-      label: "Phone Number",
-    },
-    {
-      id: "state",
-      twoLineText: true,
-      label: "State <br/>  Name",
-    },
-    {
-      id: "country",
-      disablePadding: false,
-      label: "Country",
-    },
-    {
-      id: "version",
-      twoLineText: true,
-      label: "Version <br/> Number",
-    },
-    {
-      id: "deviceType",
-      twoLineText: true,
-      label: "Device <br/> Type",
-    },
-    {
-      id: "deviceId",
-      disablePadding: false,
-      label: "Device Id",
-      type: "custom",
-      render: (row, i) => {
-        return <TableCell>{row?.deviceId ? row?.deviceId : "-"}</TableCell>;
-      },
-    },
-    {
-      id: "ipAddress",
-      disablePadding: false,
-      label: "IP Address",
-      type: "custom",
-      render: (row, i) => {
-        return (
-          <TableCell className={"user_location_ul"}>
-            {row?.ipAddress ? row?.ipAddress : "-"}
-          </TableCell>
-        );
-      },
-    },
+		{
+			id: "email",
+			numeric: true,
+			disablePadding: false,
+			label: "Email",
+		},
+		{
+			id: "phoneNumber",
+			numeric: true,
+			disablePadding: false,
+			label: "Phone",
+		},
+		{
+			id: "commission",
+			twoLineText: true,
+			label: "Commission Rate",
+		},
+		{
+			id: "quickpay",
+			disablePadding: false,
+			label: "Quick Pay",
+		},
+		{
+			id: "regularpay",
+			twoLineText: true,
+			label: "Regular Pay",
+		},
+		ActionFunction("user", {
+			id: "Action",
+			isDisbanding: true,
+			label: "Action",
+			type: "custom",
+			render: (row) => {
+				return (
+					<TableCell className={"role_field_id"}>
+						{row?.isBlock ? (
+							<span
+								className="edit_btn edit-btn-action"
+								onClick={() =>
+									handleOpenModal("BlockUser", {
+										userId: row.id,
+										isBlock: !row?.isBlock,
+									})
+								}
+							>
+								Unblock User Account
+							</span>
+						) : (
+							<span
+								className="edit_btn edit-btn-action"
+								onClick={() =>
+									handleOpenModal("BlockUser", {
+										userId: row.id,
+										isBlock: !row?.isBlock,
+									})
+								}
+							>
+								{" "}
+								Block User Account
+							</span>
+						)}
+					</TableCell>
+				);
+			},
+		}),
+		{
+			id: "Action",
+			isDisbanding: true,
+			label: "Action",
+			type: "custom",
+			render: (row) => {
+				return (
+					<TableCell className={"role_field_id"}>
+						{/* Block/Unblock User Account */}
+						{row?.isBlock ? (
+							<span
+								className="edit_btn edit-btn-action"
+								onClick={() =>
+									handleOpenModal("BlockUser", {
+										userId: row.id,
+										isBlock: !row?.isBlock,
+									})
+								}
+							>
+								Unblock User Account
+							</span>
+						) : (
+							<span
+								className="edit_btn edit-btn-action"
+								onClick={() =>
+									handleOpenModal("BlockUser", {
+										userId: row.id,
+										isBlock: !row?.isBlock,
+									})
+								}
+							>
+								Block User Account
+							</span>
+						)}
 
-    {
-      id: "cash",
-      numeric: true,
-      disablePadding: false,
-      label: "Deposit",
-      type: "custom",
-      render: (row) => {
-        return <TableCell>{currencyFormat(+row?.cash)}</TableCell>;
-      },
-    },
-    {
-      id: "winCash",
-      numeric: true,
-      disablePadding: false,
-      label: "Winning",
-      type: "custom",
-      render: (row) => {
-        return <TableCell>{currencyFormat(+row?.winCash)}</TableCell>;
-      },
-    },
+						{/* Edit User */}
+						<span
+							className="edit_btn edit-btn-action"
+							onClick={() =>
+								handleOpenModal("EditUser", {
+									userId: row.id,
+								})
+							}
+						>
+							Edit User
+						</span>
 
-    {
-      id: "bonus",
-      numeric: true,
-      disablePadding: false,
-      label: "Bonus",
-      type: "custom",
-      render: (row) => {
-        return <TableCell>{currencyFormat(+row?.bonus)}</TableCell>;
-      },
-    },
-
-    {
-      id: "totalCash",
-      numeric: true,
-      disablePadding: true,
-      label: "Total Balance",
-      type: "custom",
-      render: (row) => {
-        return <TableCell>{currencyFormat(+row?.totalCash)} </TableCell>;
-      },
-    },
-    {
-      id: "totalDeposits",
-      numeric: true,
-      disablePadding: true,
-      label: "Total Deposits",
-      type: "custom",
-      render: (row) => {
-        return <TableCell>{currencyFormat(+row?.totalDeposits)}</TableCell>;
-      },
-    },
-    {
-      id: "totalWithdrawals",
-      numeric: true,
-      disablePadding: true,
-      // twoLineText: true,
-      label: "Total Withdrawals ",
-      type: "custom",
-      render: (row) => {
-        return <TableCell>{currencyFormat(+row?.totalWithdrawals)}</TableCell>;
-      },
-    },
-    ActionFunction("user", {
-      id: "Action",
-      isDisbanding: true,
-      label: "Action",
-      type: "custom",
-      render: (row) => {
-        return (
-          <TableCell className={"role_field_id"}>
-            {row?.isBlock ? (
-              <span
-                className="edit_btn edit-btn-action"
-                onClick={() =>
-                  handleOpenModal("BlockUser", {
-                    userId: row.id,
-                    isBlock: !row?.isBlock,
-                  })
-                }
-              >
-                Unblock User Account
-              </span>
-            ) : (
-              <span
-                className="edit_btn edit-btn-action"
-                onClick={() =>
-                  handleOpenModal("BlockUser", {
-                    userId: row.id,
-                    isBlock: !row?.isBlock,
-                  })
-                }
-              >
-                {" "}
-                Block User Account
-              </span>
-            )}
-          </TableCell>
-        );
-      },
-    }),
-    {
-      id: "createdAt",
-      label: "Create Date & Time ",
-      twoLineText: true,
-      type: "custom",
-      render: (row) => {
-        return (
-          <TableCell>
-            {moment(row?.createdAt).format("MMM DD YYYY, hh:mm A")}
-          </TableCell>
-        );
-      },
-    },
-    {
-      id: "lastActivateAt",
-      label: "Last login Date & Time",
-      twoLineText: true,
-      type: "custom",
-      render: (row) => {
-        return (
-          <TableCell>
-            {moment(row?.lastActivateAt).format("MMM DD YYYY, hh:mm A")}
-          </TableCell>
-        );
-      },
-    },
-  ];
+						{/* Delete User */}
+						<span
+							className="edit_btn edit-btn-action"
+							onClick={() =>
+								handleOpenModal("DeleteUser", {
+									userId: row.id,
+								})
+							}
+						>
+							Delete User
+						</span>
+					</TableCell>
+				);
+			},
+		}
+	];;
 
   // custom PopUp function
   const handleOpenModal = (type, data) => {
@@ -368,7 +306,7 @@ const Users = () => {
       <Paper sx={{ mb: 2 }} className="outer-box">
         <div className={"d_flex justify_content_between"}>
           <h2>User ({userList?.list == 0 ? 0 : userList?.totalDocs})</h2>
-          <div className={"d_flex"}>
+          {/* <div className={"d_flex"}>
             <MainCommonFilter
               filterData={filterData}
               setFilterData={setFilterData}
@@ -391,7 +329,7 @@ const Users = () => {
               handleOpenModal={handleOpenModal}
               totalDocs={userList?.totalDocs}
             />
-          </div>
+          </div> */}
         </div>
         <CustomTable
           headCells={columns}
