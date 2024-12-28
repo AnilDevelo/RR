@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import {useSelector} from "react-redux";
 import moment from "moment";
-import Chart from 'react-apexcharts';
+// import Chart from 'react-apexcharts';
 import { BootstrapTooltip } from "utils";
 import info from "../../../../assets/images/info.svg";
 
@@ -374,12 +374,12 @@ const AnalyticsUserReportContent = ({filterData, setFilterData}) => {
                             </div>
                         </div>
                         <div className="chart_details">
-                            <Chart
+                            {/* <Chart
                                 options={dailyActiveUserReport}
                                 series={dailyActiveUserReport?.series}
                                 type="bar"
                                 height='300'
-                            />
+                            /> */}
                         </div>
                     </div>
                     <div className={'right_side_analytics'}>
@@ -397,12 +397,12 @@ const AnalyticsUserReportContent = ({filterData, setFilterData}) => {
                             </div>
                         </div>
                         <div className="chart_details">
-                            <Chart
+                            {/* <Chart
                                 options={monthlyActiveUserReport}
                                 series={monthlyActiveUserReport?.series}
                                 type="line"
                                 height='300'
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
@@ -423,12 +423,12 @@ const AnalyticsUserReportContent = ({filterData, setFilterData}) => {
                             </div>
                         </div>
                         <div className="chart_details">
-                            <Chart
+                            {/* <Chart
                                 options={dailyNewUserReport}
                                 series={dailyNewUserReport?.series}
                                 type="bar"
                                 height='300'
-                            />
+                            /> */}
 
                         </div>
                     </div>
