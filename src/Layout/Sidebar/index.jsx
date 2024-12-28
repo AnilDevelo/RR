@@ -19,6 +19,7 @@ import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import {useDispatch, useSelector} from "react-redux";
 import {getFlagConfig} from "../../Redux/settings/action";
 import {getPermissionsKey} from "../../Redux/AdminUser/action";
+import SpaceDashboardIcon from '../../images/SpaceDashboardIcon'
 
 
 function LeftContent() {
@@ -33,10 +34,31 @@ function LeftContent() {
     const [menusList, setMenuList] = useState([
         // Admin Users menu
         {
+            icon: <SpaceDashboardIcon />,
+            label: "Dashboard",
+            src: "dashboard",
+            value: 'dashboard',
+            hasMoreMenu: false,
+        },
+        {
             icon: <UserIcon />,
             label: "Admin Users",
             src: "admin-users",
             value: 'admin',
+            hasMoreMenu: false,
+        },
+        {
+            icon: <UserIcon />,
+            label: "Client user",
+            src: "Client_user",
+            value: 'trader_user',
+            hasMoreMenu: false,
+        },
+        {
+            icon: <UserIcon />,
+            label: "Trader user",
+            src: "trader_user",
+            value: 'trader_user',
             hasMoreMenu: false,
         },
         // Users menu with expandable submenus
@@ -289,8 +311,8 @@ function LeftContent() {
             <List sx={{ width: '100%', maxWidth: 360, padding: '0' }} component="nav" aria-labelledby="nested-list-subheader" className={"tab_sidebar_details"}>
                 {
                     menusList?.map((menu, i) => {
-                        //let agentDataDetails = JSON.parse(localStorage.getItem('agentData')) ||
-                        //let agentDataDetails = cookies.get('agentData');
+                        // let agentDataDetails = JSON.parse(localStorage.getItem('agentData')) ||
+                        // let agentDataDetails = cookies.get('agentData');
                         // let agentDataDetails =  agentDetails();
                         // let payload = {
                         //     permission: {

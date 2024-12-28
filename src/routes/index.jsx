@@ -16,6 +16,8 @@ const BlockUserList = React.lazy(() => import("../Pages/Users/BlockUserList"));
 const ReportedUser = React.lazy(() => import("Pages/Users/ReportedUser"));
 const UserKYC = React.lazy(() => import("../Pages/Users/UserKYC"));
 const UpdateUserMobileNumber = React.lazy(() => import("../Pages/Users/UpdateUserMobileNumber"));
+const ClientUser = React.lazy(() => import("../Pages/Users/ClientUser"));
+const TraderUser = React.lazy(() => import("../Pages/Users/TraderUser"));
 
 //Games
 const AddNewGame = React.lazy(() => import("../Pages/Games/AddNewGame"))
@@ -129,7 +131,8 @@ export const PublicroutesArray = [
 export const PrivateroutesArray = [
     { path: "/dashboard", component: Dashboard, title: "Dashboard" },
     { path: "/change-password", component: ChangePassword, title: "Change Password" },
-    { path: "/admin-users", component: AdminUser, title: "Admin Role" },
+    { path: "/Client_user", component: ClientUser, title: "Users" },
+    { path: "/trader_user", component: TraderUser, title: "Users" },
     //User
     { path: "Users", component: UserData, title: "Users" },
     //InactiveUsersList
