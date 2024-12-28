@@ -138,8 +138,8 @@ export const PrivateroutesArray = [
     { path: "/dashboard", component: Dashboard, title: "Dashboard" },
     { path: "/change-password", component: ChangePassword, title: "Change Password" },
     { path: "/admin-users", component: AdminUser, title: "Users" },
-    { path: "/user_client", component: ClientUser, title: "Users" },
-    { path: "/trader_user", component: TraderUser, title: "Users" },
+    { path: "/user_list", component: ClientUser, title: "Client Users" },
+    { path: "/trader_user", component: TraderUser, title: "Trader Users" },
     //User
     { path: "Users", component: UserData, title: "Users" },
     //InactiveUsersList

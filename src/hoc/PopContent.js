@@ -260,5 +260,7 @@ PopComponent["AddRegistration"] = require("../Pages/Tournament/TournamentTab/Tou
 PopComponent["CreateTournamentNotifications"] = require("../Pages/Tournament/TournamentTab/TournamentNotification/CreateTournamentNotifications").default;
 
 
+// bank details
+PopComponent["ViewBank"] = require("../Components/Modal/ViewBank").default;
 
 export default PopComponent;

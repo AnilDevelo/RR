@@ -121,8 +121,9 @@ const AddTraderUserList = ({ modalValue, handleOpenModal, redirectApiHandler }) 
                         <div className="formData">
                             <label>Commission Rate</label>
                             <div className="emailWrap">
-                                <input type="text" name='commissionRate' value={commissionRate} placeholder={'Enter Commission Rate'} onChange={(e) => setCommissionRate(e.target.value)} />
+                                <input type="text" name='commissionRate' value={formData.commissionRate} placeholder={'Enter Commission Rate'} onChange={(e) => changeHandlerFunction(e)} />
                             </div>
+                            {simpleValidator.current.message("commissionRate", formData?.commissionRate, "required|commissionRate")}
                         </div>
 
                         <div className="formData">

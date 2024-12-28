@@ -50,8 +50,8 @@ function LeftContent() {
         {
             icon: <UserIcon />,
             label: "Client user",
-            src: "user_client",
-            value: 'user_client',
+            src: "user_list",
+            value: 'user_list',
             hasMoreMenu: false,
         },
         {
@@ -65,10 +65,11 @@ function LeftContent() {
         {
             icon: <UserIcon />,
             label: "Users",
-            hasMoreMenu: true,
+            hasMoreMenu: false,
             isExpanded: false,
-            id: 'userId',
-            value: 'user',
+            id: 'Users',
+            value: 'Users',
+            src: "Users",
             expandArray: [
                 {
                     icon: '',
@@ -124,7 +125,7 @@ function LeftContent() {
                 },
                 {
                     icon: '',
-                    label: "Payment Gateway",
+                    label: "Deposit Transactions",
                     src: "deposit-transactions-history",
                 },
             ]
@@ -207,6 +208,8 @@ function LeftContent() {
         },
     ]);
 
+
+    
     const { role: userRole, email } = userDetails();
     
     useEffect(()=>{

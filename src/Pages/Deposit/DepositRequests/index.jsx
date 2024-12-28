@@ -9,10 +9,19 @@ import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 import moment from "moment";
 import CustomTable from "hoc/CommonTable";
+import PopComponent from "hoc/PopContent";
+import CommonModal from "hoc/CommonModal";
 
 const Users = () => {
     const navigate = useNavigate();
     const [loader, setLoader] = useState(false);
+    const [modalDetails, setModalDetails] = useState({
+        modalValue: "",
+        modalName: "",
+        modalIsOpen: false,
+      });
+
+      let Modal = PopComponent[modalDetails.modalName];
     const [userList, setUserList] = useState({
         list: [
             {
@@ -91,6 +100,25 @@ const Users = () => {
         getUserListData();
     }, [pagination.rowsPerPage, pagination.page]);
 
+    const handleOpenModal = (type, data) => {
+        switch (type) {
+          
+          case "ViewBank": {
+            setModalDetails({
+              ...modalDetails,
+              modalValue: data,
+              modalName: type,
+              modalIsOpen: true,
+            });
+            break;
+          }
+          default: {
+            setModalDetails({ ...modalDetails, modalIsOpen: false });
+          }
+        }
+      };
+
+
     let columns = [
         {
             id: "ClientId",
@@ -103,12 +131,12 @@ const Users = () => {
                     <span
                         className="edit_btn"
                         onClick={() => navigate(`/users-tab/${row.id}`)}
-                    >{`UID000${row?.numericId}`}</span>
+                    >{`CID000${row?.numericId}`}</span>
                 </TableCell>
             ),
         },
         {
-            id: "ClientName",
+            id: "name",
             numeric: true,
             disablePadding: false,
             label: "Client Name",
@@ -127,14 +155,9 @@ const Users = () => {
             label: "Phone",
         },
         {
-            id: "requestDateTime",
-            numeric: false,
-            label: "Request Date & Time",
-        },
-        {
             id: "rechargeAmount",
             numeric: false,
-            label: "Requested Recharge Amount",
+            label: "Deposit Amount",
         },
         {
             id: "transactionId",
@@ -144,13 +167,18 @@ const Users = () => {
         {
             id: "bankDetails",
             numeric: false,
-            label: "Bank Details",
+            label: "Client Bank Details",
             type: "custom",
             render: (row) => (
-                <TableCell>
-                    {`Bank: ${row.bankName}, Account Name: ${row.accountHolder}, Account No: ${row.accountNumber}, IFSC: ${row.ifscCode}`}
+                <TableCell style={{cursor:"pointer"}} onClick={()=>  handleOpenModal("ViewBank", { row })}>
+                    view
                 </TableCell>
             ),
+        },
+        {
+            id: "requestDateTime",
+            numeric: false,
+            label: "Created Date & Time",
         },
         {
             id: "status",
@@ -167,10 +195,10 @@ const Users = () => {
                     {row.status === "Pending" && (
                         <Button
                             variant="contained"
-                            color="primary"
+                            // color="primary"
                             onClick={() => handleModalOpen(row)}
                         >
-                            Send Payment Details
+                            Enter Bank Account
                         </Button>
                     )}
                 </TableCell>
@@ -195,7 +223,7 @@ const Users = () => {
             </Paper>
 
             {/* Modal for sending payment details */}
-            <Modal
+            {/* <Modal
     open={modalOpen}
     onClose={handleModalClose}
     aria-labelledby="send-payment-details-title"
@@ -244,8 +272,19 @@ const Users = () => {
             Send Details
         </Button>
     </Box>
-</Modal>
+</Modal> */}
 
+<CommonModal
+        className={"Approved-reject-section"}
+        modalIsOpen={modalDetails.modalIsOpen}
+        handleOpenModal={handleOpenModal}
+      >
+        <Modal
+          modalValue={modalDetails.modalValue}
+          handleOpenModal={handleOpenModal}
+          modalIsOpen={modalDetails.modalIsOpen}
+        />
+      </CommonModal>
         </Box>
     );
 };

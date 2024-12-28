@@ -11,6 +11,7 @@ import { getAllUserDetailsList } from "Redux/user/action";
 import MainCommonFilter from "Components/MainCommonFilter";
 import CustomTable from "hoc/CommonTable";
 import CommonModal from "hoc/CommonModal";
+import SearchInput from '../../../Components/SearchInput';
 
 
 const Users = () => {
@@ -223,7 +224,7 @@ const Users = () => {
 									})
 								}
 							>
-								Unblock User Account
+								Unblock
 							</span>
 						) : (
 							<span
@@ -235,7 +236,7 @@ const Users = () => {
 									})
 								}
 							>
-								Block User Account
+								Block
 							</span>
 						)}
 
@@ -248,7 +249,7 @@ const Users = () => {
 								})
 							}
 						>
-							Edit User
+							Edit
 						</span>
 
 						{/* Delete User */}
@@ -260,13 +261,71 @@ const Users = () => {
 								})
 							}
 						>
-							Delete User
+							Delete
 						</span>
 					</TableCell>
 				);
 			},
 		}
 	];;
+
+  const userData = [
+    {
+        id: 1,
+        numericId: 101,
+        ClientName: "John Doe",
+        email: "john.doe@example.com",
+        phoneNumber: "1234567890",
+        commission: "5%",
+        quickpay: "$100",
+        regularpay: "$150",
+        isBlock: false,
+    },
+    {
+        id: 2,
+        numericId: 102,
+        ClientName: "Jane Smith",
+        email: "jane.smith@example.com",
+        phoneNumber: "9876543210",
+        commission: "7%",
+        quickpay: "$200",
+        regularpay: "$250",
+        isBlock: true,
+    },
+    {
+        id: 3,
+        numericId: 103,
+        ClientName: "Alice Johnson",
+        email: "alice.johnson@example.com",
+        phoneNumber: "4561237890",
+        commission: "10%",
+        quickpay: "$300",
+        regularpay: "$350",
+        isBlock: false,
+    },
+    {
+        id: 4,
+        numericId: 104,
+        ClientName: "Bob Williams",
+        email: "bob.williams@example.com",
+        phoneNumber: "7894561230",
+        commission: "8%",
+        quickpay: "$400",
+        regularpay: "$450",
+        isBlock: false,
+    },
+    {
+        id: 5,
+        numericId: 105,
+        ClientName: "Charlie Brown",
+        email: "charlie.brown@example.com",
+        phoneNumber: "3216549870",
+        commission: "6%",
+        quickpay: "$500",
+        regularpay: "$550",
+        isBlock: true,
+    },
+];
 
   // custom PopUp function
   const handleOpenModal = (type, data) => {
@@ -275,6 +334,15 @@ const Users = () => {
       case "BlockUser":
       case "CommonPop":
       case "ExportFilePopup": {
+        setModalDetails({
+          ...modalDetails,
+          modalValue: data,
+          modalName: type,
+          modalIsOpen: true,
+        });
+        break;
+      }
+      case "AddTraderUser": {
         setModalDetails({
           ...modalDetails,
           modalValue: data,
@@ -301,6 +369,12 @@ const Users = () => {
       endRange: "",
     })
   }, [filterData?.platformName,filterData?.statusValue,filterData?.state])
+
+  const handleSearch = (searchTerm) => {
+    console.log("Search term:", searchTerm);
+    // Logic for filtering/searching can be added here  
+  };
+
   return (
     <Box>
       <Paper sx={{ mb: 2 }} className="outer-box">
@@ -330,10 +404,23 @@ const Users = () => {
               totalDocs={userList?.totalDocs}
             />
           </div> */}
+          <div className={"d_flex justify_content_between"} style={{ gap: '10px' }}>
+              <SearchInput onSearch={handleSearch} />
+              <button
+                className={"btn"}
+                onClick={() =>
+                  handleOpenModal("AddTraderUser", { isEdit: false })
+                }
+              >
+                {" "}
+                + Add User
+              </button>
+            </div>
         </div>
         <CustomTable
           headCells={columns}
-          rowData={userList?.list}
+          // rowData={userList?.list}
+          rowData={userData}
           totalDocs={userList?.totalDocs}
           pagination={pagination}
           setPagination={setPagination}

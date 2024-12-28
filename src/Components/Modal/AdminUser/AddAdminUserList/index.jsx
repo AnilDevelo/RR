@@ -54,6 +54,7 @@ const AddAdminUserList = ({ modalValue, handleOpenModal, redirectApiHandler }) =
     const [permission, setPermission] = useState('')
     const [helpTicketType,setHelpTicketType] =  useState(helpTicketTypeArr);
     const [gameFilterData, setGameFilterData] = useState([]);
+    const [commissionRate, setCommissionRate] = useState('');
     const [formData,setFormData] = useState({
         email: '',
         fullName: '',
@@ -235,6 +236,13 @@ const AddAdminUserList = ({ modalValue, handleOpenModal, redirectApiHandler }) =
                                 </div>
                                 {/* {phoneNumberValidation && <span className={'srv-validation-message'}>Please Enter Valid Phone Number</span>} */}
                                 {formData?.phoneNumber && simpleValidator.current.message("phoneNumber", formData?.phoneNumber, "required|numeric|min:10|max:10|phone")}
+                            </div>
+                          
+                        </div>
+                          <div className="formData">
+                            <label>Commission Rate</label>
+                            <div className="emailWrap">
+                                <input type="text" name='commissionRate' value={commissionRate} placeholder={'Enter Commission Rate'} onChange={(e) => setCommissionRate(e.target.value)} />
                             </div>
                         </div>
                         <div className={'add_admin_user_role'}>

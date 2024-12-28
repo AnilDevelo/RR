@@ -127,14 +127,14 @@ const Users = () => {
             <span
               className="edit_btn"
               onClick={() => navigate(`/users-tab/${row.id}`)}
-            >{`UID000${row?.numericId}`}</span>
+            >{`TID000${row?.numericId}`}</span>
           </TableCell>
         );
       },
     },
 
     {
-      id: "trader Name",
+      id: "traderName",
       numeric: true,
       disablePadding: false,
       label: "Trader Name",
@@ -186,7 +186,7 @@ const Users = () => {
                   })
                 }
               >
-                Unblock User Account
+                Unblock
               </span>
             ) : (
               <span
@@ -198,7 +198,7 @@ const Users = () => {
                   })
                 }
               >
-                Block User Account
+                Block
               </span>
             )}
 
@@ -211,7 +211,7 @@ const Users = () => {
                 })
               }
             >
-              Edit User
+              Edit
             </span>
 
             {/* Delete User */}
@@ -223,7 +223,7 @@ const Users = () => {
                 })
               }
             >
-              Delete User
+              Delete
             </span>
           </TableCell>
         );
@@ -231,6 +231,63 @@ const Users = () => {
     }
   ];
 
+  const userData = [
+    {
+      id: 1,
+      numericId: 101,
+      traderName: "John Doe",
+      email: "john.doe@example.com",
+      phoneNumber: "1234567890",
+      commission: "5%",
+      quickpay: "$100",
+      regularpay: "$150",
+      isBlock: false,
+    },
+    {
+      id: 2,
+      numericId: 102,
+      traderName: "Jane Smith",
+      email: "jane.smith@example.com",
+      phoneNumber: "9876543210",
+      commission: "7%",
+      quickpay: "$200",
+      regularpay: "$250",
+      isBlock: true,
+    },
+    {
+      id: 3,
+      numericId: 103,
+      traderName: "Alice Johnson",
+      email: "alice.johnson@example.com",
+      phoneNumber: "4561237890",
+      commission: "10%",
+      quickpay: "$300",
+      regularpay: "$350",
+      isBlock: false,
+    },
+    {
+      id: 4,
+      numericId: 104,
+      traderName: "Bob Williams",
+      email: "bob.williams@example.com",
+      phoneNumber: "7894561230",
+      commission: "8%",
+      quickpay: "$400",
+      regularpay: "$450",
+      isBlock: false,
+    },
+    {
+      id: 5,
+      numericId: 105,
+      traderName: "Charlie Brown",
+      email: "charlie.brown@example.com",
+      phoneNumber: "3216549870",
+      commission: "6%",
+      quickpay: "$500",
+      regularpay: "$550",
+      isBlock: true,
+    },
+  ];
   // custom PopUp function
   const handleOpenModal = (type, data) => {
     switch (type) {
@@ -266,9 +323,9 @@ const Users = () => {
   };
 
   const handleSearch = (searchTerm) => {
-	console.log("Search term:", searchTerm);
-	// Logic for filtering/searching can be added here  
-};
+    console.log("Search term:", searchTerm);
+    // Logic for filtering/searching can be added here  
+  };
 
   useEffect(() => {
     setPagination({
@@ -283,10 +340,10 @@ const Users = () => {
       <Paper sx={{ mb: 2 }} className="outer-box">
 
         <div className={"d_flex justify_content_between"}>
-          <h2>User ({userList?.list == 0 ? 0 : userList?.totalDocs})</h2>
+          <h2>Trader User ({userList?.list == 0 ? 0 : userList?.totalDocs})</h2>
           <div className={"d_flex"}>
-            <div className={"d_flex justify_content_between"} style={{gap:'10px'}}>
-			<SearchInput onSearch={handleSearch} /> 
+            <div className={"d_flex justify_content_between"} style={{ gap: '10px' }}>
+              <SearchInput onSearch={handleSearch} />
               <button
                 className={"btn"}
                 onClick={() =>
@@ -301,7 +358,8 @@ const Users = () => {
         </div>
         <CustomTable
           headCells={columns}
-          rowData={userList?.list}
+          // rowData={userList?.list}
+          rowData={userData}
           totalDocs={userList?.totalDocs}
           pagination={pagination}
           setPagination={setPagination}
